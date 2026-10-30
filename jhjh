@@ -1,0 +1,2440 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>بوابة قسم 2bac_2 الرسمية 🔥 النسخة الاحترافية ضد 404</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cairo & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Tajawal:wght@500;700;800;900&family=JetBrains+Mono:wght@600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'Tajawal', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'shake': 'shake 0.45s cubic-bezier(.36,.07,.19,.97) both',
+                        'pulse-glow': 'pulseGlow 2s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-6px)' },
+                        },
+                        shake: {
+                            '10%, 90%': { transform: 'translate3d(-3px, 0, 0)' },
+                            '20%, 80%': { transform: 'translate3d(5px, 0, 0)' },
+                            '30%, 50%, 70%': { transform: 'translate3d(-7px, 0, 0)' },
+                            '40%, 60%': { transform: 'translate3d(7px, 0, 0)' }
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { boxShadow: '0 0 15px rgba(16, 185, 129, 0.35)' },
+                            '50%': { boxShadow: '0 0 28px rgba(16, 185, 129, 0.75)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            background-color: #070b14;
+            background-image: 
+                radial-gradient(at 10% 10%, rgba(99, 102, 241, 0.16) 0px, transparent 45%),
+                radial-gradient(at 90% 15%, rgba(244, 63, 94, 0.14) 0px, transparent 45%),
+                radial-gradient(at 50% 90%, rgba(16, 185, 129, 0.12) 0px, transparent 50%);
+        }
+
+        /* Laser scan line for Brain Scanner */
+        @keyframes scanline {
+            0% { top: 8%; opacity: 0.9; }
+            50% { top: 88%; opacity: 1; }
+            100% { top: 8%; opacity: 0.9; }
+        }
+        .laser-line {
+            position: absolute;
+            left: 8%;
+            right: 8%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #22d3ee, #10b981, #22d3ee, transparent);
+            box-shadow: 0 0 16px #22d3ee, 0 0 30px #10b981;
+            border-radius: 999px;
+            animation: scanline 1.5s ease-in-out infinite;
+        }
+
+        /* Camera Shutter Flash for Caught in 4K */
+        @keyframes cameraFlash {
+            0% { opacity: 1; }
+            100% { opacity: 0; pointer-events: none; }
+        }
+        .flash-active {
+            animation: cameraFlash 0.85s ease-out forwards;
+        }
+
+        /* Smooth transition for the runaway NO button */
+        #runaway-no-btn {
+            transition: left 0.16s cubic-bezier(0.34, 1.56, 0.64, 1),
+                        top 0.16s cubic-bezier(0.34, 1.56, 0.64, 1),
+                        transform 0.16s ease;
+        }
+
+        /* Blurred fake exam text */
+        .exam-blur {
+            filter: blur(5px);
+            user-select: none;
+            pointer-events: none;
+        }
+
+        /* Official Stamp Effect */
+        .stamp-badge {
+            transform: rotate(-8deg);
+            border: 3px double #10b981;
+        }
+
+        /* Hide scrollbar for horizontal chips */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col text-slate-100 selection:bg-indigo-500 selection:text-white">
+
+    <!-- Confetti Overlay Canvas -->
+    <canvas id="confetti-canvas" class="fixed inset-0 pointer-events-none z-50"></canvas>
+
+    <!-- Camera Flash Overlay (Caught in 4K) -->
+    <div id="camera-flash" class="fixed inset-0 bg-white opacity-0 pointer-events-none z-50"></div>
+
+    <!-- Toast Notification Banner -->
+    <div id="toast-container" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 pointer-events-none flex flex-col items-center gap-2 w-11/12 max-w-md"></div>
+
+    <!-- ================================================================= -->
+    <!-- CLASS GROUP STUDENT ENTRY GATE MODAL (AUTO-PERSONALIZES VICTIM)   -->
+    <!-- ================================================================= -->
+    <div id="group-entry-gate" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-xl flex items-center justify-center p-3 sm:p-5 overflow-y-auto">
+        <div class="bg-slate-900 border-2 border-emerald-500/50 rounded-3xl max-w-md w-full p-5 sm:p-7 shadow-2xl space-y-5 relative overflow-hidden text-center my-auto">
+            <div class="absolute top-0 inset-x-0 h-2.5 bg-gradient-to-l from-emerald-400 via-indigo-500 to-rose-500"></div>
+
+            <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-tr from-indigo-600 via-purple-600 to-emerald-500 flex items-center justify-center text-3xl shadow-xl shadow-indigo-500/30 animate-float">
+                🎓
+            </div>
+
+            <div class="space-y-1.5">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-[11px] font-black">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>بوابة تلاميذ الثانية باكالوريا • قسم 2bac_2</span>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-black text-white leading-snug">
+                    مرحبا بيك فـ البوابة السرية ديال قسم <span class="font-mono text-emerald-400">2bac_2</span> 🔥
+                </h2>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    دخل سميتك باش يطلع ليك <strong class="text-amber-300">بيان النقط المسرب ديالك فـ مسار</strong>، <strong class="text-rose-300">الفرض المحروس رقم 2 PDF</strong>، وتحديات القسم المباشرة!
+                </p>
+            </div>
+
+            <div class="space-y-3 text-right">
+                <div>
+                    <label class="text-xs font-black text-slate-300 block mb-1.5">👤 كتب سميتك أولا اللقب ديالك فـ القسم:</label>
+                    <input type="text" id="gate-student-name-input" placeholder="مثلاً: أمين، ياسين، سارة، مول الطاكوس..." maxlength="28"
+                        class="w-full px-4 py-3.5 rounded-2xl bg-slate-950 border-2 border-slate-700 focus:border-emerald-400 text-white font-black text-sm sm:text-base focus:outline-none text-center shadow-inner"
+                        onkeydown="if(event.key==='Enter') enterAsClassmateFromGate()">
+                </div>
+
+                <div>
+                    <label class="text-[11px] font-bold text-slate-400 block mb-1.5">👇 شنو بغيتي تفتح هو اللول؟</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button type="button" onclick="selectGateStartGame(5)" id="gate-opt-5" class="p-2.5 rounded-xl border-2 border-emerald-400 bg-emerald-500/20 text-white font-black text-xs flex items-center gap-2 transition">
+                            <span class="text-lg">🎓</span>
+                            <span>نقط مسار المسربة</span>
+                        </button>
+                        <button type="button" onclick="selectGateStartGame(2)" id="gate-opt-2" class="p-2.5 rounded-xl border-2 border-slate-800 bg-slate-950 text-slate-300 font-bold text-xs flex items-center gap-2 transition">
+                            <span class="text-lg">📄</span>
+                            <span>تسريب الفرض PDF</span>
+                        </button>
+                        <button type="button" onclick="selectGateStartGame(1)" id="gate-opt-1" class="p-2.5 rounded-xl border-2 border-slate-800 bg-slate-950 text-slate-300 font-bold text-xs flex items-center gap-2 transition">
+                            <span class="text-lg">🚨</span>
+                            <span>سؤال الصراحة</span>
+                        </button>
+                        <button type="button" onclick="selectGateStartGame(3)" id="gate-opt-3" class="p-2.5 rounded-xl border-2 border-slate-800 bg-slate-950 text-slate-300 font-bold text-xs flex items-center gap-2 transition">
+                            <span class="text-lg">🎡</span>
+                            <span>عجلة الحظ</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="enterAsClassmateFromGate()" class="w-full py-4 rounded-2xl bg-gradient-to-l from-emerald-500 via-teal-500 to-indigo-600 hover:opacity-95 active:scale-95 text-slate-950 font-black text-base shadow-xl shadow-emerald-500/25 transition flex items-center justify-center gap-2">
+                <span>دخول للبوابة دابا 🚀</span>
+            </button>
+
+            <p class="text-[10px] text-slate-500 font-bold">
+                🔒 خاص فقط بتلاميذ قسم <span class="font-mono text-slate-400">2bac_2</span> • التحديث المباشر شغال
+            </p>
+        </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- WHATSAPP CLASS GROUP GUIDE & LOCKED EXPORT MODAL                  -->
+    <!-- ================================================================= -->
+    <div id="group-guide-modal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-3 sm:p-5 overflow-y-auto">
+        <div class="bg-slate-900 border-2 border-emerald-500/50 rounded-3xl max-w-2xl w-full p-5 sm:p-6 shadow-2xl space-y-4 relative overflow-hidden my-auto">
+            <div class="absolute top-0 inset-x-0 h-2 bg-gradient-to-l from-emerald-400 via-amber-400 to-indigo-500"></div>
+
+            <div class="flex items-center justify-between gap-2 border-b border-slate-800 pb-3">
+                <div class="flex items-center gap-2.5">
+                    <span class="w-10 h-10 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-xl">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </span>
+                    <div>
+                        <h3 class="font-black text-base sm:text-lg text-white">كيفاش تصيفطو فـ كروب قسم <span class="font-mono text-emerald-400">2bac_2</span> بلا 404؟ 🔥</h3>
+                        <p class="text-[11px] text-slate-400">تبع هاد 3 خطوات الساهلة (فـ 20 ثانية) باش كل تلميذ يدخل سميتو ويحصل فـ اللايف!</p>
+                    </div>
+                </div>
+                <button onclick="closeGroupGuideModal()" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- 3 Simple Steps -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-right">
+                <!-- Step 1 -->
+                <div class="bg-slate-950 p-3.5 rounded-2xl border border-emerald-500/40 space-y-2 flex flex-col justify-between">
+                    <div class="space-y-1.5">
+                        <span class="px-2.5 py-0.5 rounded-full bg-emerald-500 text-slate-950 font-black text-[10px]">الخطوة 1 (ضرورية)</span>
+                        <h4 class="font-black text-xs sm:text-sm text-white">تيليشارجي نسخة الكروب المقفولة 📦</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">
+                            هاد النسخة مخبيين فيها الإعدادات أوتوماتيكياً، وملي كيدخل ليها أي تلميذ كتسولو على سميتو وكتصيدو!
+                        </p>
+                    </div>
+                    <button onclick="downloadLockedGroupIndexHtml()" class="w-full py-2.5 px-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs shadow-lg transition flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-download"></i>
+                        <span>تيليشارجي index.html مقفول</span>
+                    </button>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-950 p-3.5 rounded-2xl border border-amber-500/40 space-y-2 flex flex-col justify-between">
+                    <div class="space-y-1.5">
+                        <span class="px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-[10px]">الخطوة 2 (فـ 15 ثانية)</span>
+                        <h4 class="font-black text-xs sm:text-sm text-white">حط الملف وخرج رابط مجاني 🌐</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">
+                            افتح موقع <strong class="text-amber-300 font-mono">tiiny.host</strong> أولا <strong class="text-cyan-300 font-mono">app.netlify.com/drop</strong> ولوح فيه ملف <code class="text-emerald-300">index.html</code> وغادي يعطيك رابط خدام 100%!
+                        </p>
+                    </div>
+                    <div class="flex gap-1.5">
+                        <a href="https://tiiny.host" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 font-black text-[11px] text-center transition">
+                            فتح Tiiny.host ↗
+                        </a>
+                        <a href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-2 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-500/40 text-cyan-300 font-black text-[11px] text-center transition">
+                            Netlify Drop ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-950 p-3.5 rounded-2xl border border-indigo-500/40 space-y-2 flex flex-col justify-between">
+                    <div class="space-y-1.5">
+                        <span class="px-2.5 py-0.5 rounded-full bg-indigo-500 text-white font-black text-[10px]">أولا بلا رابط (مباشر)</span>
+                        <h4 class="font-black text-xs sm:text-sm text-white">صيفط الملف نيشان أولا جربو دابا 👀</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">
+                            تقدر تصيفط ملف <code class="text-emerald-300">index.html</code> كـ Document فـ كروب الواتساب، أولا جرب كيفاش غادي يبان لصحابك دابا!
+                        </p>
+                    </div>
+                    <button onclick="closeGroupGuideModal(); activateClassGroupPortalMode();" class="w-full py-2.5 px-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-black text-xs shadow-lg transition flex items-center justify-center gap-1.5">
+                        <span>👥 جرب وضع كروب القسم دابا</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ready-to-copy Spicy WhatsApp Group Bait Messages -->
+            <div class="bg-slate-950 rounded-2xl p-4 border border-slate-800 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="text-xs font-black text-emerald-400">💬 ميساجات ملغومة واجدة لكروب الواتساب ديال <span class="font-mono text-white">2bac_2</span>:</span>
+                    <span class="text-[10px] text-slate-400">ختار الميساج لي عجبك وورك على نسخ أولا واتساب!</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                    <button onclick="setGroupBaitTemplate(0)" id="bait-tpl-0" class="p-2 rounded-xl border border-emerald-500 bg-emerald-500/15 text-emerald-300 font-black text-xs text-right">
+                        🎓 طُعم نقط مسار المسربة (واعر بزاف!)
+                    </button>
+                    <button onclick="setGroupBaitTemplate(1)" id="bait-tpl-1" class="p-2 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 font-bold text-xs text-right">
+                        📄 طُعم تسريب الفرض المحروس PDF
+                    </button>
+                    <button onclick="setGroupBaitTemplate(2)" id="bait-tpl-2" class="p-2 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 font-bold text-xs text-right">
+                        🎡 طُعم البوابة الرسمية والتصويت
+                    </button>
+                </div>
+
+                <textarea id="group-bait-textarea" rows="3"
+                    class="w-full p-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-bold focus:outline-none focus:border-emerald-500 leading-relaxed"></textarea>
+
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <button onclick="copyGroupBaitMessage(false)" class="flex-1 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-black text-xs transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-copy text-emerald-400"></i>
+                        <span>نسخ الميساج لكروب القسم 📋</span>
+                    </button>
+                    <button onclick="copyGroupBaitMessage(true)" class="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-l from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-slate-950 font-black text-xs shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>فتح واتساب وصيفط لكروب 2bac_2 📲</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- SHARE & ANTI-404 REMOTE TRAP MODAL                                -->
+    <!-- ================================================================= -->
+    <div id="share-modal" class="fixed inset-0 z-50 hidden bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-5">
+        <div class="bg-slate-900 border-2 border-indigo-500/50 rounded-3xl max-w-lg w-full p-5 sm:p-6 shadow-2xl space-y-4 relative overflow-hidden">
+            <div class="absolute top-0 inset-x-0 h-2 bg-gradient-to-l from-emerald-400 via-indigo-500 to-rose-500"></div>
+
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <span class="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-lg">📡</span>
+                    <div>
+                        <h3 class="font-black text-base sm:text-lg text-white">الفخ واجد أونلاين • بدون خطأ 404 ✅</h3>
+                        <p class="text-[11px] text-slate-400">ختار الطريقة لي بغيتي تصيد بيها صاحبك فـ <span class="font-mono text-emerald-400">2bac_2</span></p>
+                    </div>
+                </div>
+                <button onclick="closeShareModal()" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- generated trap code display -->
+            <div class="bg-slate-950 rounded-2xl p-4 border border-indigo-500/40 text-center space-y-1.5">
+                <span class="text-xs font-bold text-slate-400 block">🔑 كود الفخ المباشر ديال <span id="modal-victim-name" class="text-emerald-400 font-black">عشيري</span>:</span>
+                <div class="flex items-center justify-center gap-3">
+                    <span id="modal-trap-code" class="font-mono text-3xl sm:text-4xl font-black tracking-widest text-amber-400 bg-amber-500/10 px-5 py-1.5 rounded-2xl border border-amber-500/30">#202</span>
+                </div>
+                <p class="text-[11px] text-slate-400 pt-1">
+                    أي واحد دخل هاد الكود الفوق فالموقع غادي يطلع ليه هاد الفخ مباشرة بلا ما يتبدل الرابط وبلا Error 404!
+                </p>
+            </div>
+
+            <!-- 3 Foolproof Options -->
+            <div class="space-y-2.5">
+                <!-- Option 1: Lock right now on this device -->
+                <button onclick="closeShareModal(); activateStealthTrapMode();" class="w-full p-3.5 rounded-2xl bg-gradient-to-l from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-black text-xs sm:text-sm flex items-center justify-between shadow-lg transition">
+                    <div class="flex items-center gap-3 text-right">
+                        <span class="text-2xl">🔒</span>
+                        <div>
+                            <div>قفل الشاشة دابا وعطيه التيليفون / البيسي</div>
+                            <div class="text-[10px] text-indigo-200 font-semibold">خدام 100% فـ البلاصة قدام الدراري بلا إنترنت وبلا 404</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-left text-xs"></i>
+                </button>
+
+                <!-- Option 2: Send WhatsApp Message with Code -->
+                <button onclick="sendWhatsAppReadyMessage()" class="w-full p-3.5 rounded-2xl bg-gradient-to-l from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-slate-950 font-black text-xs sm:text-sm flex items-center justify-between shadow-lg transition">
+                    <div class="flex items-center gap-3 text-right">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <div>
+                            <div>صيفط ميساج وكود الفخ فـ واتساب 📲</div>
+                            <div class="text-[10px] text-slate-900 font-bold">كينسخ الميساج الملغوم بالكود وكيفتح واتساب</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-left text-xs"></i>
+                </button>
+
+                <!-- Option 3: Download standalone HTML file for GitHub Pages / Direct WhatsApp file share -->
+                <button onclick="downloadStandaloneSiteFile()" class="w-full p-3 rounded-2xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-black text-xs flex items-center justify-between transition">
+                    <div class="flex items-center gap-3 text-right">
+                        <span class="text-xl">📥</span>
+                        <div>
+                            <div>تيليشارجي الموقع كامل فـ ملف واحد (<span class="font-mono text-amber-400">2bac_2.html</span>)</div>
+                            <div class="text-[10px] text-slate-400 font-normal">باش تصيفطو فـ واتساب كـ ملف أولا تحطو فـ GitHub ديالك!</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-download text-xs text-amber-400"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- TOP BAR (Clean, Simple & Triple-Tap Logo to Unlock Stealth Mode)  -->
+    <!-- ================================================================= -->
+    <header class="w-full bg-slate-900/90 backdrop-blur-lg border-b border-slate-800/80 sticky top-0 z-40">
+        <div class="max-w-4xl mx-auto px-3 sm:px-5 py-2.5 flex items-center justify-between gap-2">
+            
+            <!-- Brand Badge (Secret Triple-Tap Unlock Trigger) -->
+            <div onclick="handleSecretLogoTap()" class="flex items-center gap-2.5 cursor-pointer group" title="ورك 3 المرات هنا (أولا ESC 3 المرات) باش تفتح أولا تقفل وضع الفخ">
+                <div class="relative flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-purple-600 to-rose-500 shadow-lg shadow-indigo-500/30 group-active:scale-90 transition">
+                    <span class="font-mono font-black text-xs text-white tracking-tighter">2BAC</span>
+                    <span class="absolute -bottom-1 -left-1 px-1.5 py-0.2 rounded-full bg-emerald-400 text-slate-950 font-mono font-black text-[10px] shadow">2</span>
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <h1 class="font-black text-base sm:text-lg text-white tracking-tight">قسم <span class="text-transparent bg-clip-text bg-gradient-to-l from-emerald-400 to-cyan-400 font-mono">2bac_2</span></h1>
+                        <span class="px-2 py-0.5 text-[10px] font-black rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">PRO 🔥</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400 hidden sm:block">البوابة الرسمية للمقالب واللايف المباشر • بدون 404</p>
+                </div>
+            </div>
+
+            <!-- Right Controls: Trap Code Quick Input + Main 2-View Switcher + Sound -->
+            <div class="flex items-center gap-1.5 sm:gap-2">
+                <!-- Quick Trap Code Join Box -->
+                <div class="flex items-center bg-slate-950 rounded-xl border border-slate-800 p-0.5 pl-1">
+                    <input type="text" id="quick-code-input" placeholder="كود #202" maxlength="5"
+                        class="w-16 sm:w-20 px-2 py-1 bg-transparent text-amber-400 font-mono font-black text-xs focus:outline-none text-center"
+                        onkeydown="if(event.key==='Enter') loadTrapByCode()">
+                    <button onclick="loadTrapByCode()" class="px-2 py-1 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-[11px] transition" title="دخل كود الفخ">
+                        دخول
+                    </button>
+                </div>
+
+                <!-- 2-Tab Pill Switcher (Play vs Live) -->
+                <div id="main-nav-pills" class="flex items-center bg-slate-950 p-1 rounded-2xl border border-slate-800">
+                    <button onclick="switchMainSection('play')" id="nav-btn-play" class="px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-black transition flex items-center gap-1 bg-indigo-600 text-white shadow">
+                        <span>🎮</span>
+                        <span class="hidden sm:inline">المقالب</span>
+                    </button>
+                    <button onclick="switchMainSection('live')" id="nav-btn-live" class="px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-black transition flex items-center gap-1 text-slate-400 hover:text-white">
+                        <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span>
+                        <span>اللايف</span>
+                        <span id="header-live-count" class="px-1.5 py-0.2 rounded-full bg-rose-500/20 text-rose-300 font-mono text-[10px]">0</span>
+                    </button>
+                </div>
+
+                <!-- Sound Mute/Unmute -->
+                <button onclick="toggleSound()" class="w-9 h-9 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center justify-center">
+                    <i id="sound-icon" class="fa-solid fa-volume-high text-emerald-400 text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- MAIN CONTENT CONTAINER                                            -->
+    <!-- ================================================================= -->
+    <main class="flex-1 w-full max-w-4xl mx-auto px-3 sm:px-5 py-4 flex flex-col gap-4">
+
+        <!-- ============================================================= -->
+        <!-- SECTION A: 🎮 PLAY & PRANK (SUPER EASY 1-CLICK CONTROLS)      -->
+        <!-- ============================================================= -->
+        <div id="section-play" class="space-y-4">
+
+            <!-- STEP 1 & 2 CONTROL PANEL (Hidden automatically when Locked for Victim) -->
+            <div id="easy-setup-panel" class="bg-slate-900/90 backdrop-blur-xl rounded-3xl border border-indigo-500/30 p-4 sm:p-5 shadow-2xl space-y-4 relative overflow-hidden">
+                
+                <!-- Row 1: Victim Name + Instant 1-Tap Action Buttons -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-3 items-end">
+                    
+                    <!-- Friend Name Input (5 cols) -->
+                    <div class="md:col-span-5 space-y-1.5">
+                        <label class="text-xs font-black text-slate-300 flex items-center justify-between">
+                            <span>👤 سمية صاحبك فـ <span class="font-mono text-indigo-400">2bac_2</span>:</span>
+                            <span class="text-[10px] text-emerald-400 font-bold">كتطلع فالفخ وفاللايف!</span>
+                        </label>
+                        <div class="relative">
+                            <input type="text" id="victim-name-input" value="عشيري فـ 2bac_2" oninput="updateVictimName(this.value)" placeholder="كتب سميتو هنا (مثلا: أمين، ياسين، سارة...)"
+                                class="w-full px-3.5 py-2.5 rounded-2xl bg-slate-950 border-2 border-slate-800 focus:border-indigo-500 text-white font-black text-sm focus:outline-none transition">
+                        </div>
+                        <!-- 1-Tap Quick Names -->
+                        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pt-0.5">
+                            <button onclick="updateVictimName('عشيري فـ 2bac_2')" class="shrink-0 text-[10px] font-bold px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300">عشيري</button>
+                            <button onclick="updateVictimName('مول الطاكوس 🌮')" class="shrink-0 text-[10px] font-bold px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300">مول الطاكوس</button>
+                            <button onclick="updateVictimName('النعاس الرسمي 😴')" class="shrink-0 text-[10px] font-bold px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300">النعاس الرسمي</button>
+                            <button onclick="updateVictimName('المجههد ديال القسم 🤓')" class="shrink-0 text-[10px] font-bold px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300">المجههد</button>
+                            <button onclick="updateVictimName('ممثل القسم 🐍')" class="shrink-0 text-[10px] font-bold px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300">ممثل القسم</button>
+                        </div>
+                    </div>
+
+                    <!-- 2 Instant Action Buttons (7 cols) - ZERO 404 GUARANTEED -->
+                    <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <!-- Action 1: Lock Screen In-Place (Zero Reload, Zero 404) -->
+                        <button onclick="activateStealthTrapMode()" class="py-3 px-4 rounded-2xl bg-gradient-to-l from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 active:scale-95 text-white font-black text-xs sm:text-sm shadow-lg shadow-indigo-600/25 transition flex items-center justify-center gap-2.5">
+                            <i class="fa-solid fa-lock text-base"></i>
+                            <div class="text-right">
+                                <div class="leading-tight">قفل الشاشة وعطيه يلعب 🔒</div>
+                                <div class="text-[10px] font-semibold text-indigo-200">فـ البلاصة قدام الدراري (بلا 404)</div>
+                            </div>
+                        </button>
+
+                        <!-- Action 2: Launch in Class WhatsApp Group (Special Group Mode + Exporter) -->
+                        <button onclick="openGroupGuideModal()" class="py-3 px-4 rounded-2xl bg-gradient-to-l from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 active:scale-95 text-slate-950 font-black text-xs sm:text-sm shadow-lg shadow-emerald-500/25 transition flex items-center justify-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <div class="text-right">
+                                <div class="leading-tight">صيفطو فـ كروب القسم 2bac_2 📢</div>
+                                <div class="text-[10px] font-bold text-slate-900">نسخة مقفولة للكروب + ميساج واجد</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Group Mode Bar -->
+                <div class="flex flex-wrap items-center justify-between gap-2 bg-slate-950/90 px-3.5 py-2.5 rounded-2xl border border-emerald-500/30">
+                    <div class="flex items-center gap-2 text-xs">
+                        <span class="px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 font-black text-[10px]">جديد لكروب الواتساب 🔥</span>
+                        <span class="text-slate-300 font-bold">بغيتي تلوح السيت فـ كروب <strong class="font-mono text-emerald-400">2bac_2</strong> وكل واحد يدخل سميتو بوحدو؟</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <button onclick="downloadLockedGroupIndexHtml()" class="px-3 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-[11px] transition flex items-center gap-1 shadow">
+                            <i class="fa-solid fa-download"></i>
+                            <span>تيليشارجي index.html مقفول للكروب</span>
+                        </button>
+                        <button onclick="activateClassGroupPortalMode()" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/30 font-black text-[11px] transition">
+                            👥 معاينة بوابة الكروب
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 2: 5 Big Visual Prank Selector Cards -->
+                <div class="pt-2 border-t border-slate-800/80">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-[11px] font-extrabold text-slate-300">👇 ختار واحد من 5 ديال المقالب الأسطورية ديال <span class="font-mono text-emerald-400">2bac_2</span>:</span>
+                        <span class="text-[10px] font-bold text-amber-400 hidden sm:inline">💡 نصيحة: جرب «نقط مسار المسربة» راه واعرة!</span>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                        <!-- Prank 1 -->
+                        <button onclick="selectPrankGame(1)" id="game-card-1" class="p-2.5 rounded-2xl border-2 text-right transition flex flex-col justify-between gap-1">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xl">🏃‍♂️</span>
+                                <span class="text-[9px] font-black px-1.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300">طوب 1</span>
+                            </div>
+                            <div class="font-black text-xs text-white mt-0.5">سؤال الصراحة</div>
+                            <div class="text-[10px] text-slate-400 leading-tight">بطونة "لا" كتهرب!</div>
+                        </button>
+
+                        <!-- Prank 2 -->
+                        <button onclick="selectPrankGame(2)" id="game-card-2" class="p-2.5 rounded-2xl border-2 text-right transition flex flex-col justify-between gap-1">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xl">📸</span>
+                                <span class="text-[9px] font-black px-1.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300">حصلة 4K</span>
+                            </div>
+                            <div class="font-black text-xs text-white mt-0.5">تسريب الفرض PDF</div>
+                            <div class="text-[10px] text-slate-400 leading-tight">فلاش الكاميرا والإنذار</div>
+                        </button>
+
+                        <!-- Prank 3 -->
+                        <button onclick="selectPrankGame(3)" id="game-card-3" class="p-2.5 rounded-2xl border-2 text-right transition flex flex-col justify-between gap-1">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xl">🎡</span>
+                                <span class="text-[9px] font-black px-1.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300">حماس</span>
+                            </div>
+                            <div class="font-black text-xs text-white mt-0.5">عجلة الفضايح</div>
+                            <div class="text-[10px] text-slate-400 leading-tight">دور العجلة والحكم!</div>
+                        </button>
+
+                        <!-- Prank 4 -->
+                        <button onclick="selectPrankGame(4)" id="game-card-4" class="p-2.5 rounded-2xl border-2 text-right transition flex flex-col justify-between gap-1">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xl">🧠</span>
+                                <span class="text-[9px] font-black px-1.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300">بصمة</span>
+                            </div>
+                            <div class="font-black text-xs text-white mt-0.5">سكانير الدماغ</div>
+                            <div class="text-[10px] text-slate-400 leading-tight">نسبة الفيزيك والطاكوس</div>
+                        </button>
+
+                        <!-- Prank 5 (NEW: Leaked Massar Grades) -->
+                        <button onclick="selectPrankGame(5)" id="game-card-5" class="col-span-2 sm:col-span-1 p-2.5 rounded-2xl border-2 text-right transition flex flex-col justify-between gap-1">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xl">🎓</span>
+                                <span class="text-[9px] font-black px-1.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300">جديد 🔥</span>
+                            </div>
+                            <div class="font-black text-xs text-white mt-0.5">نقط مسار المسربة</div>
+                            <div class="text-[10px] text-slate-400 leading-tight">بيان النقط وملاحظة الأستاذ</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================================= -->
+            <!-- GAME 1: 🏃‍♂️ سؤال الصراحة المهربان (RUNAWAY "NO" TRAP)     -->
+            <!-- ========================================================= -->
+            <div id="game-stage-1" class="space-y-3">
+                <!-- Student Mode Switcher Bar (Visible when locked in Group Mode so classmates can try all 5 traps!) -->
+                <div id="student-mode-switcher" class="hidden bg-slate-900/95 rounded-2xl p-2.5 border border-emerald-500/30 flex items-center justify-between gap-2 overflow-x-auto no-scrollbar">
+                    <span class="text-[11px] font-black text-emerald-400 shrink-0 px-2">👋 مرحبا <span id="student-bar-name" class="text-white underline"></span>:</span>
+                    <div class="flex items-center gap-1.5 shrink-0">
+                        <button onclick="selectPrankGame(5)" class="px-2.5 py-1.5 rounded-xl bg-purple-500/20 text-purple-300 border border-purple-500/30 font-black text-[11px]">🎓 نقط مسار</button>
+                        <button onclick="selectPrankGame(2)" class="px-2.5 py-1.5 rounded-xl bg-rose-500/20 text-rose-300 border border-rose-500/30 font-black text-[11px]">📄 الفرض PDF</button>
+                        <button onclick="selectPrankGame(1)" class="px-2.5 py-1.5 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-black text-[11px]">🏃‍♂️ سؤال الصراحة</button>
+                        <button onclick="selectPrankGame(3)" class="px-2.5 py-1.5 rounded-xl bg-amber-500/20 text-amber-300 border border-amber-500/30 font-black text-[11px]">🎡 عجلة الحظ</button>
+                        <button onclick="selectPrankGame(4)" class="px-2.5 py-1.5 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-black text-[11px]">🧠 سكانير</button>
+                        <button onclick="switchMainSection('live')" class="px-2.5 py-1.5 rounded-xl bg-rose-600 text-white font-black text-[11px]">🔴 اللايف</button>
+                    </div>
+                </div>
+                
+                <!-- Quick 1-Tap Question Picker Bar (Hidden when Locked) -->
+                <div id="g1-question-picker" class="bg-slate-900/80 rounded-2xl p-3 border border-slate-800 space-y-2">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="text-xs font-extrabold text-emerald-400">🎯 ورك على السؤال لي عجبك أولا كتب سؤالك:</span>
+                        <button onclick="cycleNextQuestion()" class="text-xs font-black px-3 py-1 rounded-xl bg-indigo-500/20 hover:bg-indigo-500/30 text-indigo-300 border border-indigo-500/30 transition">
+                            🎲 بدل السؤال
+                        </button>
+                    </div>
+                    <!-- Horizontal 1-Tap Question Pills -->
+                    <div id="g1-preset-chips" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+                        <!-- Populated by JS -->
+                    </div>
+                    <input type="text" id="g1-custom-q-input" oninput="setCustomQuestionText(this.value)" placeholder="✏️ أولا كتب هنا أي سؤال بغيتي تصيد بيه صاحبك..."
+                        class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 focus:border-emerald-500 text-white text-xs font-bold focus:outline-none">
+                </div>
+
+                <!-- Main Trap Card -->
+                <div id="g1-trap-card" class="relative bg-slate-900/95 rounded-3xl border-2 border-indigo-500/40 shadow-2xl p-5 sm:p-8 overflow-hidden min-h-[430px] flex flex-col justify-between">
+                    <div class="absolute top-0 inset-x-0 h-2 bg-gradient-to-l from-emerald-400 via-indigo-500 to-pink-500"></div>
+
+                    <div class="flex items-center justify-between gap-2 flex-wrap">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-xs font-black">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            تحقيق رسمي مباشر • قسم <span class="font-mono text-white">2bac_2</span>
+                        </span>
+                        <span id="g1-dodge-counter" class="hidden px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-black">
+                            هربات منك: 0 مرات 😂
+                        </span>
+                    </div>
+
+                    <div class="my-auto text-center py-5 space-y-3">
+                        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-tr from-indigo-600 to-pink-500 flex items-center justify-center text-3xl shadow-lg animate-float">
+                            🚨
+                        </div>
+                        <p class="text-xs sm:text-sm font-extrabold text-pink-400">
+                            سؤال موجه لـ: <span id="g1-display-name" class="text-white underline decoration-pink-500 decoration-2 underline-offset-4 font-black">عشيري فـ 2bac_2</span>
+                        </p>
+                        <h2 id="g1-display-question" class="text-xl sm:text-3xl font-black text-white leading-relaxed px-2">
+                            واش بصح نتا هو أكبر نعاس فـ 2bac_2 وكتجي غير باش تكمل النعسة فحصة الفيزيك؟ 😴
+                        </h2>
+                        <div id="g1-taunt-box" class="inline-block px-4 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-slate-300 text-xs sm:text-sm font-bold">
+                            ⚠️ جاوب بصراحة.. الجواب ديالك غادي يطلع فـ اللايف ديال <span class="font-mono text-emerald-400">2bac_2</span>!
+                        </div>
+                    </div>
+
+                    <!-- Runaway Button Arena -->
+                    <div id="g1-arena" class="relative w-full h-44 sm:h-48 rounded-2xl bg-slate-950 border border-slate-800 p-4 flex items-center justify-center gap-4 overflow-hidden">
+                        <button id="g1-yes-btn" onclick="triggerGame1Confession()"
+                            class="z-10 px-6 py-3.5 rounded-2xl bg-gradient-to-l from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 active:scale-95 text-slate-950 font-black text-base sm:text-lg shadow-xl shadow-emerald-500/25 transition-all duration-200 flex items-center gap-2">
+                            <span>✅ آه بصح 100%!</span>
+                        </button>
+
+                        <button id="runaway-no-btn"
+                            onmouseenter="dodgeRunawayNo(event)"
+                            ontouchstart="dodgeRunawayNo(event)"
+                            onclick="dodgeRunawayNo(event)"
+                            class="z-20 px-4 py-2.5 rounded-2xl bg-rose-600/20 hover:bg-rose-600/30 text-rose-300 border border-rose-500/40 font-black text-sm whitespace-nowrap shadow-md">
+                            <span id="g1-no-text">لا، كذوب! ❌</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Confession Certificate Result -->
+                <div id="g1-result-card" class="hidden bg-slate-900 rounded-3xl border-2 border-emerald-500 shadow-2xl p-6 sm:p-8 text-center relative overflow-hidden space-y-5">
+                    <div class="absolute top-0 inset-x-0 h-3 bg-gradient-to-l from-emerald-400 via-teal-500 to-indigo-500"></div>
+
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-black animate-bounce">
+                        <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span>
+                        <span>🔴 تنشر الاعتراف ديالك دابا فـ اللايف ديال 2bac_2!</span>
+                    </div>
+
+                    <h2 class="text-2xl sm:text-3xl font-black text-white">شديناك بالدليل القاطع! 😂🏆</h2>
+
+                    <div class="relative bg-slate-950 rounded-2xl p-5 border-2 border-dashed border-emerald-500/50 text-right space-y-3">
+                        <div class="stamp-badge absolute left-4 top-4 px-3 py-1 rounded-xl bg-emerald-500/10 text-emerald-400 font-mono font-black text-xs">
+                            مختوم فـ 2bac_2 ✅
+                        </div>
+                        <div class="text-xs font-mono text-slate-500 border-b border-slate-800 pb-2">
+                            وثيقة اعتراف رسمية • <span id="g1-cert-time"></span>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 block">الاعتراف المسجل:</span>
+                            <p id="g1-cert-q" class="text-base sm:text-lg font-black text-amber-300 mt-1"></p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 pt-2 border-t border-slate-800 text-xs">
+                            <div class="bg-slate-900 p-2.5 rounded-xl">
+                                <span class="text-slate-400 block">اسم التلميذ(ة):</span>
+                                <span id="g1-cert-name" class="font-black text-emerald-400 text-sm"></span>
+                            </div>
+                            <div class="bg-slate-900 p-2.5 rounded-xl">
+                                <span class="text-slate-400 block">محاولات الهروب بـ "لا":</span>
+                                <span id="g1-cert-dodges" class="font-black text-rose-400 text-sm"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-2.5">
+                        <button onclick="switchMainSection('live')" class="flex-1 py-3.5 rounded-2xl bg-gradient-to-l from-rose-600 to-pink-600 text-white font-black text-sm shadow-lg transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>شوف الفضيحة فـ اللايف ديال 2bac_2 🔴</span>
+                        </button>
+                        <button onclick="resetGame1()" class="py-3.5 px-6 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-black text-sm transition">
+                            إعادة الفخ 🔄
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================================= -->
+            <!-- GAME 2: 📸 تسريب الفرض المحروس PDF (CAUGHT IN 4K)         -->
+            <!-- ========================================================= -->
+            <div id="game-stage-2" class="hidden space-y-3">
+                <!-- Bait Exam Card -->
+                <div id="g2-bait-card" class="bg-white text-slate-900 rounded-3xl shadow-2xl border-2 border-slate-300 overflow-hidden">
+                    <div class="bg-slate-900 text-white px-5 py-4 flex items-center justify-between border-b-4 border-rose-600">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-2xl bg-rose-600/20 border border-rose-500/40 flex items-center justify-center text-rose-400 text-xl">
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-0.5 rounded bg-rose-600 text-white font-black text-[10px]">تسريب سري 🔥</span>
+                                    <span class="font-mono text-xs text-amber-400 font-bold">خاص بتلاميذ 2bac_2</span>
+                                </div>
+                                <h2 class="text-sm sm:text-base font-black text-white mt-0.5">الفرض المحروس رقم 2 + التصحيح الكامل (20/20)</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 sm:p-6 space-y-4">
+                        <!-- 1-Tap Subject Switcher -->
+                        <div class="flex flex-wrap items-center justify-between gap-2 bg-slate-100 p-2.5 rounded-2xl border border-slate-200">
+                            <span class="text-xs font-black text-slate-700">📚 ختار المادة:</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <button onclick="setExamLeakSubject('الفيزياء والكيمياء - الفرض 2')" class="text-xs px-3 py-1.5 rounded-xl bg-white hover:bg-indigo-50 border border-slate-300 font-black text-slate-800 shadow-sm">⚡ الفيزيك</button>
+                                <button onclick="setExamLeakSubject('الرياضيات (الماط) - الفرض 2')" class="text-xs px-3 py-1.5 rounded-xl bg-white hover:bg-indigo-50 border border-slate-300 font-black text-slate-800 shadow-sm">📐 الماط</button>
+                                <button onclick="setExamLeakSubject('علوم الحياة والأرض SVT')" class="text-xs px-3 py-1.5 rounded-xl bg-white hover:bg-indigo-50 border border-slate-300 font-black text-slate-800 shadow-sm">🧬 SVT</button>
+                                <button onclick="setExamLeakSubject('الفلسفة - القولة والسؤال')" class="text-xs px-3 py-1.5 rounded-xl bg-white hover:bg-indigo-50 border border-slate-300 font-black text-slate-800 shadow-sm">🤔 الفلسفة</button>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 rounded-2xl p-3.5 border border-slate-200 text-xs space-y-1.5">
+                            <div class="flex justify-between">
+                                <span class="text-slate-500 font-bold">المادة المسربة:</span>
+                                <span id="g2-subject-label" class="font-black text-indigo-700">الفيزياء والكيمياء - الفرض 2 (2bac_2)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-500 font-bold">الملف:</span>
+                                <span class="font-mono font-bold text-rose-600" dir="ltr">Correction_2bac_2_Officiel.pdf</span>
+                            </div>
+                        </div>
+
+                        <!-- Blurred Preview + Big Download Button -->
+                        <div class="relative rounded-2xl border-2 border-slate-300 bg-white p-4 overflow-hidden">
+                            <div class="space-y-2 text-xs text-slate-700">
+                                <p class="font-black text-slate-900">التمرين الأول (7 نقط) - الحل النهائي:</p>
+                                <p class="exam-blur">نعتبر الدالة العددية المعرفة على المجال الموجب، بتطبيق مبرهنة القيم الوسيطة والاشقاق نجد أن المنحنى يقبل مقاربا مائلا مع الجواب الكامل.</p>
+                                <p class="font-black text-slate-900 pt-1">التمرين الثاني (8 نقط) - قوانين نيوتن:</p>
+                                <p class="exam-blur">بتطبيق القانون الثاني لنيوتن في المعلم الأرضي، نجد المعادلة التفاضلية للحركة والتسارع يساوي القيمة المضبوطة.</p>
+                            </div>
+
+                            <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-[2px] flex flex-col items-center justify-center p-4 text-center text-white">
+                                <p class="text-xs sm:text-sm font-black mb-3">👇 ورك على البطونة باش تفتح ملف PDF قبل ما يتمسح:</p>
+                                <button id="g2-download-btn" onclick="triggerExamDownloadTrap()"
+                                    class="px-6 py-3.5 rounded-2xl bg-gradient-to-l from-rose-600 to-amber-500 hover:from-rose-500 hover:to-amber-400 active:scale-95 text-white font-black text-xs sm:text-sm shadow-xl transition flex items-center gap-2 animate-pulse-glow">
+                                    <span>📥 تحميل وفتح التصحيح دابا (PDF)</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div id="g2-progress-box" class="hidden space-y-1.5">
+                            <div class="flex justify-between text-xs font-black text-slate-800">
+                                <span id="g2-progress-text">جاري تحميل التصحيح...</span>
+                                <span id="g2-progress-pct" class="font-mono text-rose-600">0%</span>
+                            </div>
+                            <div class="w-full h-3.5 bg-slate-200 rounded-full overflow-hidden p-0.5">
+                                <div id="g2-progress-bar" class="h-full bg-gradient-to-l from-rose-600 via-amber-500 to-emerald-500 rounded-full w-0 transition-all duration-75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caught in 4K Screen -->
+                <div id="g2-caught-card" class="hidden bg-slate-900 text-white rounded-3xl border-2 border-rose-500 shadow-2xl p-6 sm:p-8 text-center relative overflow-hidden animate-shake space-y-5">
+                    <div class="absolute top-0 inset-x-0 h-3 bg-gradient-to-l from-rose-600 via-amber-500 to-rose-600"></div>
+
+                    <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-rose-500/20 border border-rose-500/50 text-rose-300 font-black text-xs">
+                        <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping"></span>
+                        <span>رادار الغشاشين • قسم 2bac_2 المباشر</span>
+                    </div>
+
+                    <h2 class="text-2xl sm:text-4xl font-black text-white">
+                        📸 حصلتي بـ 4K أ الغشاش ديال <span class="font-mono text-amber-400">2bac_2</span>!
+                    </h2>
+                    <p class="text-sm sm:text-base font-bold text-rose-200">
+                        باغي الفرض واجد بلا حفاظة ياك؟! 😂 صيفطنا سميتك مباشرة للايف ديال القسم!
+                    </p>
+
+                    <div class="bg-slate-950 rounded-2xl p-4 border border-slate-800 text-right max-w-md mx-auto space-y-2 text-xs">
+                        <div class="flex justify-between text-slate-400 border-b border-slate-800 pb-1.5 font-mono">
+                            <span class="text-rose-400 font-bold">🔴 REC-CAM-2BAC2</span>
+                            <span>تم النشر فـ اللايف ✅</span>
+                        </div>
+                        <p class="text-slate-300">المتهم: <strong id="g2-caught-name" class="text-amber-400 text-sm">عشيري فـ 2bac_2</strong></p>
+                        <p class="text-slate-300">المادة لي بغى ينقل فيها: <strong id="g2-caught-sub" class="text-white">الفيزياء والكيمياء</strong></p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-2.5">
+                        <button onclick="switchMainSection('live')" class="flex-1 py-3.5 rounded-2xl bg-gradient-to-l from-rose-600 to-amber-500 text-white font-black text-sm shadow-lg transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>شوف سميتك فـ سبورة الغشاشين أونلاين 🔴</span>
+                        </button>
+                        <button onclick="resetGame2()" class="py-3.5 px-6 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-black text-sm transition">
+                            إعادة المقلب 🔄
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================================= -->
+            <!-- GAME 3: 🎡 عجلة الحظ والفضايح ديال 2bac_2 (SPIN WHEEL)     -->
+            <!-- ========================================================= -->
+            <div id="game-stage-3" class="hidden">
+                <div class="bg-slate-900/95 rounded-3xl border-2 border-amber-500/40 shadow-2xl p-5 sm:p-8 text-center relative overflow-hidden space-y-5">
+                    <div class="absolute top-0 inset-x-0 h-2 bg-gradient-to-l from-amber-400 via-pink-500 to-indigo-500"></div>
+
+                    <div class="space-y-1">
+                        <span class="px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-black">
+                            🎡 عجلة الحظ والحكم الرسمي • 2bac_2
+                        </span>
+                        <h2 class="text-xl sm:text-2xl font-black text-white pt-1">
+                            دور العجلة لـ <span id="g3-wheel-name" class="text-amber-400 underline">عشيري فـ 2bac_2</span> وشوف شنو غاتحكم عليه!
+                        </h2>
+                    </div>
+
+                    <!-- Wheel Canvas Container with Pointer -->
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 mx-auto flex items-center justify-center">
+                        <!-- Top Pointer Arrow -->
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 text-3xl drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)]">
+                            🔻
+                        </div>
+                        <canvas id="wheel-canvas" width="340" height="340" class="w-full h-full rounded-full shadow-2xl border-4 border-slate-800"></canvas>
+                        <!-- Center Spin Cap -->
+                        <button onclick="spinThe2BacWheel()" id="wheel-center-btn" class="absolute w-16 h-16 rounded-full bg-slate-950 border-4 border-amber-400 text-amber-300 font-black text-xs shadow-xl flex items-center justify-center hover:scale-105 active:scale-95 transition">
+                            دور! 🎰
+                        </button>
+                    </div>
+
+                    <!-- Result Banner (Appears after spin) -->
+                    <div id="g3-wheel-result-box" class="hidden bg-slate-950 rounded-2xl p-4 border-2 border-amber-400/60 max-w-md mx-auto space-y-2 animate-bounce">
+                        <span class="text-xs font-bold text-rose-400 block">🔴 تنشر هاد الحكم فـ اللايف ديال 2bac_2!</span>
+                        <p class="text-xs text-slate-400">حكمات العجلة على <strong id="g3-res-victim" class="text-white"></strong> بـ:</p>
+                        <div id="g3-res-text" class="text-lg sm:text-xl font-black text-amber-300"></div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-2.5 max-w-md mx-auto">
+                        <button id="g3-spin-main-btn" onclick="spinThe2BacWheel()" class="flex-1 py-3.5 rounded-2xl bg-gradient-to-l from-amber-500 to-pink-600 hover:from-amber-400 hover:to-pink-500 active:scale-95 text-slate-950 font-black text-base shadow-xl shadow-amber-500/20 transition flex items-center justify-center gap-2">
+                            <span>🎰 دور العجلة دابا!</span>
+                        </button>
+                        <button onclick="switchMainSection('live')" class="py-3.5 px-5 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-black text-xs sm:text-sm transition flex items-center justify-center gap-1.5">
+                            <span>شوف اللايف 🔴</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================================= -->
+            <!-- GAME 4: 🧠 سكانير دماغ 2bac_2 (BRAIN SCANNER)             -->
+            <!-- ========================================================= -->
+            <div id="game-stage-4" class="hidden">
+                <div class="bg-slate-900/95 rounded-3xl border-2 border-cyan-500/40 shadow-2xl p-5 sm:p-8 text-center relative overflow-hidden space-y-5">
+                    <div class="absolute top-0 inset-x-0 h-2 bg-gradient-to-l from-cyan-400 via-emerald-400 to-indigo-500"></div>
+
+                    <!-- Scan View -->
+                    <div id="g4-scan-view" class="space-y-4">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-xs font-black">
+                            🧬 سكانير العقل والوطني • 2bac_2
+                        </span>
+                        <h2 class="text-lg sm:text-2xl font-black text-white">
+                            حط صبعك باش نكشفو شنو كاين فـ دماغ <span id="g4-scan-name" class="text-cyan-400 underline">عشيري فـ 2bac_2</span>!
+                        </h2>
+
+                        <div class="relative w-44 h-44 mx-auto flex items-center justify-center">
+                            <svg class="w-full h-full -rotate-90 transform" viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="52" stroke="rgba(30, 41, 59, 0.9)" stroke-width="8" fill="transparent" />
+                                <circle id="g4-progress-ring" cx="60" cy="60" r="52" stroke="#06b6d4" stroke-width="8"
+                                    stroke-dasharray="326.7" stroke-dashoffset="326.7" stroke-linecap="round" fill="transparent"
+                                    class="transition-all duration-75" />
+                            </svg>
+
+                            <button onmousedown="startGame4BrainScan(event)" ontouchstart="startGame4BrainScan(event)" onclick="startGame4BrainScan(event)"
+                                class="absolute inset-4 rounded-full bg-slate-950 border-2 border-cyan-500/50 hover:border-cyan-400 flex flex-col items-center justify-center overflow-hidden group active:scale-95 transition">
+                                <div id="g4-laser" class="laser-line hidden"></div>
+                                <i id="g4-fp-icon" class="fa-solid fa-fingerprint text-6xl text-cyan-400 transition-transform duration-300"></i>
+                                <span id="g4-scan-pct" class="font-mono text-xs font-black text-emerald-400 mt-2">0%</span>
+                            </button>
+                        </div>
+
+                        <p id="g4-scan-status" class="text-xs sm:text-sm font-black text-cyan-300 animate-pulse">
+                            👆 ورك على البصمة باش يبدا السكانير (2 ثواني)
+                        </p>
+                    </div>
+
+                    <!-- Brain Result View -->
+                    <div id="g4-result-view" class="hidden space-y-4 text-right">
+                        <div class="text-center">
+                            <span class="px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-black">
+                                🔴 تنشر التقرير الطبي فـ اللايف ديال 2bac_2!
+                            </span>
+                            <h3 class="text-xl sm:text-2xl font-black text-white mt-2">
+                                نتيجة سكانير الدماغ ديال: <span id="g4-res-name" class="text-cyan-400"></span>
+                            </h3>
+                        </div>
+
+                        <div class="bg-slate-950 rounded-2xl p-4 sm:p-5 border border-cyan-500/40 space-y-3">
+                            <div id="g4-bars-box" class="space-y-2.5"></div>
+                            <div class="pt-3 border-t border-slate-800">
+                                <span class="text-xs font-bold text-amber-400 block">🎓 القرار النهائي ديال مجلس القسم:</span>
+                                <p id="g4-res-verdict" class="text-sm sm:text-base font-black text-white mt-0.5"></p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-2.5">
+                            <button onclick="switchMainSection('live')" class="flex-1 py-3.5 rounded-2xl bg-gradient-to-l from-rose-600 to-pink-600 text-white font-black text-sm shadow-lg transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>شوف التقرير فـ اللايف ديال 2bac_2 🔴</span>
+                            </button>
+                            <button onclick="resetGame4()" class="py-3.5 px-6 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-black text-sm transition">
+                                سكانير جديد 🔄
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================================= -->
+            <!-- GAME 5: 🎓 نقط مسار 2bac_2 المسربة (FAKE MASSAR PORTAL)   -->
+            <!-- ========================================================= -->
+            <div id="game-stage-5" class="hidden space-y-3">
+                <div class="bg-slate-900/95 rounded-3xl border-2 border-purple-500/40 shadow-2xl overflow-hidden">
+                    <!-- Official-looking Massar Header -->
+                    <div class="bg-gradient-to-l from-indigo-950 via-slate-900 to-purple-950 px-5 py-4 border-b border-purple-500/30 flex items-center justify-between flex-wrap gap-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-2xl bg-amber-500/20 border border-amber-400/40 flex items-center justify-center text-2xl">
+                                🎓
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-black text-[10px]">منظومة مسار • متمدرس</span>
+                                    <span class="font-mono text-xs text-amber-400 font-bold">قسم 2bac_2</span>
+                                </div>
+                                <h2 class="text-sm sm:text-base font-black text-white mt-0.5">نتائج المراقبة المستمرة المسربة وملاحظات الأساتذة</h2>
+                            </div>
+                        </div>
+                        <span class="text-[11px] font-mono text-slate-400">الدورة 1 • 2026/2027</span>
+                    </div>
+
+                    <!-- Step 1: Click to reveal grades -->
+                    <div id="g5-lookup-view" class="p-6 sm:p-8 text-center space-y-5">
+                        <div class="max-w-md mx-auto bg-slate-950 rounded-2xl p-4 border border-slate-800 space-y-2 text-right text-xs">
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">اسم التلميذ(ة) المسجل:</span>
+                                <span id="g5-student-name" class="font-black text-emerald-400 text-sm">عشيري فـ 2bac_2</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">القسم والمسلك:</span>
+                                <span class="font-mono font-black text-white">الثانية باكالوريا • 2bac_2</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">حالة النقط:</span>
+                                <span class="text-rose-400 font-black animate-pulse">⚠️ مسربة قبل التوقيع النهائي</span>
+                            </div>
+                        </div>
+
+                        <button onclick="revealMassarGradesTrap()" class="px-7 py-4 rounded-2xl bg-gradient-to-l from-purple-600 via-indigo-600 to-emerald-500 hover:opacity-95 active:scale-95 text-white font-black text-sm sm:text-base shadow-xl transition inline-flex items-center gap-2.5">
+                            <i class="fa-solid fa-unlock-keyhole"></i>
+                            <span>كشف بيان النقط والملاحظات السرية دابا 📄</span>
+                        </button>
+                    </div>
+
+                    <!-- Step 2: Hilarious Leaked Grade Table -->
+                    <div id="g5-grades-view" class="hidden p-4 sm:p-6 space-y-4">
+                        <div class="flex items-center justify-between bg-rose-500/15 border border-rose-500/40 rounded-2xl p-3">
+                            <div class="text-xs font-black text-rose-300">
+                                🔴 تنشر بيان النقط ديال <span id="g5-table-name" class="text-white underline"></span> فـ اللايف ديال 2bac_2!
+                            </div>
+                            <span class="font-mono font-black text-xs px-2.5 py-1 rounded-xl bg-rose-600 text-white">حصلة رسمية 😂</span>
+                        </div>
+
+                        <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950">
+                            <table class="w-full text-right text-xs">
+                                <thead class="bg-slate-900 text-slate-400 border-b border-slate-800">
+                                    <tr>
+                                        <th class="p-3 font-black">المادة</th>
+                                        <th class="p-3 font-black text-center">النقطة / 20</th>
+                                        <th class="p-3 font-black">ملاحظة الأستاذ السرية فـ مسار</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-800/80 font-bold">
+                                    <tr>
+                                        <td class="p-3 text-white font-black">⚡ الفيزياء والكيمياء</td>
+                                        <td class="p-3 text-center font-mono text-rose-400 font-black text-sm">02.25 / 20</td>
+                                        <td class="p-3 text-slate-300">كيسول «أستاذ واش هادشي داخل فالفرض؟» 5 دقايق قبل ما نفرق الوراقي!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-white font-black">📐 الرياضيات (الماط)</td>
+                                        <td class="p-3 text-center font-mono text-rose-400 font-black text-sm">01.50 / 20</td>
+                                        <td class="p-3 text-slate-300">حاسب النهاية (Limite) بالقرعة وخرجت ليه ناقص ما لا نهاية فالمعدل.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 text-white font-black">🤔 الفلسفة</td>
+                                        <td class="p-3 text-center font-mono text-amber-400 font-black text-sm">03.00 / 20</td>
+                                        <td class="p-3 text-slate-300">كاتب فالمقدمة: «الإنسان كائن يبغي ينعس ويشد الباك بلا حفاظة».</td>
+                                    </tr>
+                                    <tr class="bg-emerald-500/10">
+                                        <td class="p-3 text-emerald-300 font-black">🌮 الاستراحة والطاكوس</td>
+                                        <td class="p-3 text-center font-mono text-emerald-400 font-black text-sm">19.75 / 20</td>
+                                        <td class="p-3 text-emerald-200">الأول على الصعيد الوطني فالهروب من السوايع الإضافية وتقشار البطاطا! 🏆</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="bg-slate-950 rounded-2xl p-3.5 border border-amber-500/40 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
+                            <span class="font-bold text-slate-300">🎓 قرار مجلس قسم <strong class="font-mono text-amber-400">2bac_2</strong>:</span>
+                            <span class="font-black text-amber-300">إلزام التلميذ يخلص طاكوس على صحابو باش نبدلو ليه النقط لـ 18/20! 🌮😂</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-2.5">
+                            <button onclick="switchMainSection('live')" class="flex-1 py-3.5 rounded-2xl bg-gradient-to-l from-rose-600 to-pink-600 text-white font-black text-sm shadow-lg transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>شوف الفضيحة فـ اللايف ديال 2bac_2 🔴</span>
+                            </button>
+                            <button onclick="resetGame5()" class="py-3.5 px-6 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-black text-sm transition">
+                                إعادة المقلب 🔄
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ============================================================= -->
+        <!-- SECTION B: 🔴 اللايف ديال 2bac_2 (ONLINE LIVE WALL & POLLS)    -->
+        <!-- ============================================================= -->
+        <div id="section-live" class="hidden space-y-5">
+
+            <!-- Quick Live Post / Roast Bar -->
+            <div class="bg-slate-900/95 rounded-3xl border-2 border-rose-500/40 p-4 sm:p-5 shadow-2xl space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-rose-500 animate-ping"></span>
+                        <h2 class="text-base sm:text-xl font-black text-white">سبورة الحصلة واللايف المباشر • <span class="font-mono text-rose-400">2bac_2</span></h2>
+                    </div>
+                    <button onclick="switchMainSection('play')" class="text-xs font-black px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white transition">
+                        + صيد صاحبك دابا 🎮
+                    </button>
+                </div>
+
+                <!-- 1-Tap Quick Shoutout / Roast Input -->
+                <div class="flex flex-col sm:flex-row gap-2 bg-slate-950 p-2.5 rounded-2xl border border-slate-800">
+                    <input type="text" id="live-author-input" placeholder="سميتك..." maxlength="24"
+                        class="sm:w-1/4 px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs font-bold focus:outline-none focus:border-rose-500">
+                    <input type="text" id="live-msg-input" placeholder="💬 لوح شي قصف أولا نكتة مباشرة لدراري ديال 2bac_2..." maxlength="140"
+                        class="flex-1 px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs font-bold focus:outline-none focus:border-rose-500">
+                    <button onclick="postQuickLiveRoast()" class="px-5 py-2 rounded-xl bg-gradient-to-l from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white font-black text-xs shadow-lg transition shrink-0">
+                        نشر فـ اللايف 🔥
+                    </button>
+                </div>
+            </div>
+
+            <!-- Live Feed + Polls Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+                
+                <!-- Live Victims & Roasts Wall (7 cols) -->
+                <div class="lg:col-span-7 bg-slate-900/90 rounded-3xl border border-slate-800 p-4 space-y-3">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-2.5">
+                        <span class="font-black text-xs sm:text-sm text-white">🚨 آخر الضحايا فـ <span class="font-mono text-emerald-400">2bac_2</span> (أونلاين):</span>
+                        <span id="live-feed-badge" class="text-[11px] font-mono font-bold px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300">0</span>
+                    </div>
+                    <div id="live-wall-list" class="space-y-2.5 max-h-[520px] overflow-y-auto pl-1">
+                        <!-- Real-time items rendered here -->
+                    </div>
+                </div>
+
+                <!-- 1-Tap Class Polls (5 cols) -->
+                <div class="lg:col-span-5 bg-slate-900/90 rounded-3xl border border-slate-800 p-4 space-y-3">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-2.5">
+                        <span class="font-black text-xs sm:text-sm text-white">🗳️ تصويت قسم <span class="font-mono text-amber-400">2bac_2</span>:</span>
+                        <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300">ورك باش تصوت!</span>
+                    </div>
+                    <div id="live-polls-list" class="space-y-3.5">
+                        <!-- Real-time polls rendered here -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-3 px-4 text-center text-[11px] text-slate-500 border-t border-slate-900/80 mt-auto">
+        <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <span>صنع خصيصاً لأحسن قسم <strong class="text-emerald-400 font-mono">2bac_2</strong> 🇲🇦</span>
+            <span id="stealth-footer-hint">💡 سر: ورك 3 المرات على شعار <strong class="font-mono text-slate-400">2BAC_2</strong> الفوق باش تفتح أولا تقفل الشاشة</span>
+        </div>
+    </footer>
+
+    <!-- ================================================================= -->
+    <!-- CORE JAVASCRIPT ENGINE (ULTRA-FAST, 1-TAP & SOUND FX)             -->
+    <!-- ================================================================= -->
+    <script>
+        // WHEN EXPORTED FOR WHATSAPP CLASS GROUP, THIS FLAG AUTOMATICALLY LOCKS THE SITE IN STUDENT PORTAL MODE
+        const FORCE_GROUP_LOCK = false;
+        const DEFAULT_GROUP_START_GAME = 5;
+
+        /********************************************************************
+         * 1. DARIJA DATA FOR 2BAC_2
+         ********************************************************************/
+        const QUESTIONS_2BAC2 = [
+            { short: "أكبر نعاس فـ الفيزيك 😴", full: "واش بصح نتا هو أكبر نعاس فـ 2bac_2 وكتجي غير باش تكمل النعسة فحصة الفيزيك؟ 😴" },
+            { short: "تخلص طاكوس على القسم 🌮", full: "واش موافق تخلص طاكوس ميكست ومونادا على كاع الدراري ديال 2bac_2 هاد السيمانة؟ 🌮🥤" },
+            { short: "كيبكي وكيجيب 18/20 🐍", full: "اعترف بصراحة.. واش نتا لي كتبكي «ماحفظت والو» قبل الفرض وفاللخر كتجيب 18/20؟ 🐍📚" },
+            { short: "عقلك خدام بـ 1% 🧠", full: "واش عقلك خدام غير بـ 1% فـ الماط والفيزيك والباقي غير تفكير فـ الماكلة والنعاس؟ 🧠" },
+            { short: "تفتيش الواتساب 📱", full: "واش تقدر تعطي التيليفون ديالك يتفتش قدام قسم 2bac_2 كامل بلا ما تمسح الواتساب؟ 📱👀" },
+            { short: "شفار الستيلوات 🖊️", full: "واش نتا هو لي كيسلف الستيلو الأزرق والورقة المزدوجة فـ 2bac_2 وعمرك ما رديتيهوم؟ 🖊️🤣" },
+            { short: "كيسول أستاذ فالدقيقة 90 🤓", full: "واش نتا هو لي كيفكر الأستاذ فـ التمارين المنزلية ملي كيكون باقي غير دقيقة وتصوني؟ 🤓🚨" },
+            { short: "الهروب من السوايع 🏃‍♂️", full: "واش بصح كتمشي للسوايع الإضافية غير باش تلاقى مع العشران وتاكلو طاكوس؟ 🌮😂" }
+        ];
+
+        const RUNAWAY_TAUNTS = [
+            "فين هربان؟ اعترف! 😂",
+            "والو غاتورك على آه بزز! 🤣",
+            "البطونة عيقات بيك أ ولد 2bac_2!",
+            "ما كاينش الهروب فـ 2bac_2 🚫",
+            "صبعك ثقيل أ عشيري 😂",
+            "غير استسلم وورك على آه! ✅",
+            "رادار 2bac_2 شدك بـ 4K 📸"
+        ];
+
+        const WHEEL_SLICES_2BAC2 = [
+            { label: "تخلص طاكوس 🌮", fullVerdict: "تخلص طاكوس على صحابك فـ 2bac_2 هاد السيمانة! 🌮🥤", color: "#f59e0b" },
+            { label: "أكبر نعاس 😴", fullVerdict: "لقب أكبر نعاس رسمي فـ حصة الفيزيك والماط! 😴🏆", color: "#6366f1" },
+            { label: "غشاش محترف 👀", fullVerdict: "غشاش بدرجة دكتوراه فـ النقيل فالدقيقة 90! 👀📝", color: "#f43f5e" },
+            { label: "19 فـ الوطني 🎓", fullVerdict: "بشارة خير: غادي تجيب 19/20 فـ الوطني إن شاء الله وتفرحنا! 🎓🎉", color: "#10b981" },
+            { label: "دفتر خاوي 📓", fullVerdict: "مول الدفتر الخاوي من أول العام فـ 2bac_2! 😂📓", color: "#8b5cf6" },
+            { label: "ممثل القسم 🐍", fullVerdict: "أكبر ممثل كيبكي قدام القسم «ماحفظت والو» وكيجيب اللول! 🐍🤓", color: "#06b6d4" },
+            { label: "مول السوايع 😂", fullVerdict: "كيمشي للسوايع غير على ود الضحك والقصارة بلا قراية! 😂🔥", color: "#ec4899" },
+            { label: "قرعة أتاي 🫖", fullVerdict: "تجيب معاك البغرير وأتاي لقسم 2bac_2 غدا الصباح! 🫖🥞", color: "#14b8a6" }
+        ];
+
+        const BRAIN_RESULTS_2BAC2 = [
+            {
+                bars: [
+                    { name: "التفكير فـ الطاكوس والنعاس وسط الحصة", pct: 85, col: "bg-amber-400" },
+                    { name: "مراقبة الساعة فوقاش تصوني 12:00", pct: 14, col: "bg-rose-400" },
+                    { name: "قوانين الفيزيك والدوال د الماط", pct: 1, col: "bg-emerald-400" }
+                ],
+                verdict: "الخلاصة: الدماغ ديالك فـ وضع الطيران ✈️ خاصك فورماطاج عاجل قبل الوطني!"
+            },
+            {
+                bars: [
+                    { name: "تمثيل دور «والله ماحفظت والو أ دراري»", pct: 74, col: "bg-purple-400" },
+                    { name: "حفاظة الملخصات بالليل فـ السكات", pct: 24, col: "bg-cyan-400" },
+                    { name: "النية الصافية مع صحابو فـ 2bac_2", pct: 2, col: "bg-emerald-400" }
+                ],
+                verdict: "الخلاصة: أكبر ممثل فـ 2bac_2! غاتجيب ميزة حسن جداً وتخلص علينا طاكوس 🌮"
+            },
+            {
+                bars: [
+                    { name: "النقيل ديال التمارين 5 دقايق قبل الحصة", pct: 80, col: "bg-rose-400" },
+                    { name: "تسلاف الستيلو والورقة المزدوجة", pct: 18, col: "bg-amber-400" },
+                    { name: "التركيز مع الأستاذ فـ السبورة", pct: 2, col: "bg-emerald-400" }
+                ],
+                verdict: "الخلاصة: أسطورة الدقيقة 90 فـ قسم 2bac_2! 😂🏆"
+            }
+        ];
+
+        const SEED_LIVE_FEED = [
+            {
+                id: 'seed_v1',
+                victimName: 'مول الطاكوس 🌮',
+                badge: '🎡 عجلة الفضايح 2bac_2',
+                text: 'حكمات عليه العجلة بـ: تخلص طاكوس على صحابك فـ 2bac_2 هاد السيمانة! 🌮🥤',
+                timestamp: Date.now() - 1000 * 60 * 8,
+                reactions: { laugh: 18, fire: 12, skull: 7 }
+            },
+            {
+                id: 'seed_v2',
+                victimName: 'النعاس الرسمي 😴',
+                badge: '📸 حصل بـ 4K',
+                text: 'حصل كيبغي يحمل تسريب الفرض المحروس رقم 2 ديال الفيزيك بلا حفاظة! 📄🚨',
+                timestamp: Date.now() - 1000 * 60 * 25,
+                reactions: { laugh: 24, fire: 9, skull: 14 }
+            },
+            {
+                id: 'seed_v3',
+                victimName: 'عشيري فـ 2bac_2',
+                badge: '🏃‍♂️ اعتراف رسمي',
+                text: 'اعترف بـ «آه بصح 100%» بلي هو أكبر نعاس فـ 2bac_2 من بعد ما هربات منو لا 9 مرات! 😂',
+                timestamp: Date.now() - 1000 * 60 * 48,
+                reactions: { laugh: 15, fire: 11, skull: 6 }
+            }
+        ];
+
+        const SEED_POLLS = [
+            {
+                id: 'poll_1',
+                question: 'شكون أكثر واحد كينعس فحصة الفيزيك والماط فـ 2bac_2؟ 😴',
+                options: [
+                    { name: 'مول الطابلة اللخرة', votes: 16 },
+                    { name: 'النعاس الرسمي ديال القسم', votes: 12 },
+                    { name: 'مول الطاكوس', votes: 9 }
+                ]
+            },
+            {
+                id: 'poll_2',
+                question: 'شكون ديما كيبكي قبل الفرض «ماحفظت والو» وكيجيب 18/20؟ 🐍📚',
+                options: [
+                    { name: 'المجههد ديال الصف اللول', votes: 19 },
+                    { name: 'حافظة المقررات', votes: 14 },
+                    { name: 'ممثل القسم السينمائي', votes: 10 }
+                ]
+            }
+        ];
+
+        /********************************************************************
+         * 2. STATE MANAGEMENT
+         ********************************************************************/
+        const appState = {
+            section: 'play', // 'play' or 'live'
+            game: 1,         // 1, 2, 3, 4, 5
+            victimName: 'عشيري فـ 2bac_2',
+            qIndex: 0,
+            questionText: QUESTIONS_2BAC2[0].full,
+            examSubject: 'الفيزياء والكيمياء - الفرض 2',
+            isLocked: false,
+            soundOn: true,
+            activeTrapCode: '202',
+            // Game 1
+            dodgeCount: 0,
+            // Game 3 Wheel
+            wheelAngle: 0,
+            isSpinning: false,
+            // Game 4 Brain
+            isScanning: false,
+            scanTimer: null,
+            // Secret tap & ESC unlock
+            logoTaps: 0,
+            logoTapTimer: null,
+            escPresses: 0,
+            escTimer: null,
+            // Live Data
+            liveFeed: [...SEED_LIVE_FEED],
+            polls: JSON.parse(JSON.stringify(SEED_POLLS)),
+            trapsByCode: {
+                '202': { game: 1, victimName: 'عشيري فـ 2bac_2', questionText: QUESTIONS_2BAC2[0].full, examSubject: 'الفيزياء والكيمياء - الفرض 2' }
+            },
+            gateSelectedGame: DEFAULT_GROUP_START_GAME || 5
+        };
+
+        const GROUP_BAIT_TEMPLATES = [
+            `🚨 الدراري والبنات ديال 2bac_2 شكون صايب هاد البوابة السرية ديال القسم؟! 😱\nراه لقاو فيها نقط المراقبة المستمرة المسربة ديال مسار وملاحظات الأساتذة على كل واحد فينا قبل ما يتحطو رسمياً! 🎓📄\nدخلو سميتكم هنا وشوفو شحال حطو ليكم:\n👉 [حط الرابط هنا]`,
+            `📄 عاجل لدراري ديال 2bac_2! 🔥\nتسرب الفرض المحروس رقم 2 ديال الفيزيك والماط بـ PDF مع التصحيح الكامل خاص بقسمنا 2bac_2 قبل ما يتمسح! 🤫\nدخل سميتك فـ البوابة وورك على تحميل PDF:\n👉 [حط الرابط هنا]`,
+            `😂🔥 البوابة الرسمية ديال قسم 2bac_2 شعلات فـ اللايف!\nفيها عجلة الفضايح، سكانير الدماغ، وتصويت القسم المباشر + نقط مسار المسربة 🎓\nكل واحد يدخل سميتو ويشوف شنو غادي يخرج ليه قدام القسم:\n👉 [حط الرابط هنا]`
+        ];
+
+        // Allow Creator to unlock with 3x ESC key on PC
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                appState.escPresses++;
+                clearTimeout(appState.escTimer);
+                if (appState.escPresses >= 3) {
+                    appState.escPresses = 0;
+                    if (appState.isLocked) unlockStealthTrapMode();
+                } else {
+                    appState.escTimer = setTimeout(() => { appState.escPresses = 0; }, 900);
+                }
+            }
+        });
+
+        /********************************************************************
+         * 3. WEB AUDIO SYNTHESIZER (NO EXTERNAL FILES REQUIRED)
+         ********************************************************************/
+        let audioCtx = null;
+        function getAudio() {
+            if (!audioCtx) {
+                const Ctx = window.AudioContext || window.webkitAudioContext;
+                if (Ctx) audioCtx = new Ctx();
+            }
+            if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
+            return audioCtx;
+        }
+
+        function toggleSound() {
+            appState.soundOn = !appState.soundOn;
+            const icon = document.getElementById('sound-icon');
+            icon.className = appState.soundOn
+                ? 'fa-solid fa-volume-high text-emerald-400 text-sm'
+                : 'fa-solid fa-volume-xmark text-rose-400 text-sm';
+            if (appState.soundOn) sfxPop();
+        }
+
+        function sfxPop(freq = 600) {
+            if (!appState.soundOn) return;
+            try {
+                const ctx = getAudio();
+                if (!ctx) return;
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(freq * 1.4, ctx.currentTime + 0.07);
+                gain.gain.setValueAtTime(0.12, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.07);
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start();
+                osc.stop(ctx.currentTime + 0.08);
+            } catch (e) {}
+        }
+
+        function sfxBoing() {
+            if (!appState.soundOn) return;
+            try {
+                const ctx = getAudio();
+                if (!ctx) return;
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.type = 'triangle';
+                const f = 260 + Math.random() * 180;
+                osc.frequency.setValueAtTime(f, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(f * 2.4, ctx.currentTime + 0.14);
+                gain.gain.setValueAtTime(0.18, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.14);
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start();
+                osc.stop(ctx.currentTime + 0.15);
+            } catch (e) {}
+        }
+
+        function sfxWin() {
+            if (!appState.soundOn) return;
+            try {
+                const ctx = getAudio();
+                if (!ctx) return;
+                [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.type = 'triangle';
+                    const st = ctx.currentTime + i * 0.08;
+                    osc.frequency.setValueAtTime(f, st);
+                    gain.gain.setValueAtTime(0.15, st);
+                    gain.gain.exponentialRampToValueAtTime(0.001, st + 0.25);
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.start(st);
+                    osc.stop(st + 0.26);
+                });
+            } catch (e) {}
+        }
+
+        function sfxAlarm() {
+            if (!appState.soundOn) return;
+            try {
+                const ctx = getAudio();
+                if (!ctx) return;
+                [880, 440, 880, 380].forEach((f, i) => {
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.type = 'sawtooth';
+                    const st = ctx.currentTime + i * 0.14;
+                    osc.frequency.setValueAtTime(f, st);
+                    gain.gain.setValueAtTime(0.14, st);
+                    gain.gain.exponentialRampToValueAtTime(0.001, st + 0.13);
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.start(st);
+                    osc.stop(st + 0.14);
+                });
+            } catch (e) {}
+        }
+
+        /********************************************************************
+         * 4. CONFETTI & TOAST HELPERS
+         ********************************************************************/
+        const confettiCanvas = document.getElementById('confetti-canvas');
+        const confettiCtx = confettiCanvas.getContext('2d');
+        let particles = [];
+        let animId = null;
+
+        function resizeConfettiCanvas() {
+            confettiCanvas.width = window.innerWidth;
+            confettiCanvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeConfettiCanvas);
+        resizeConfettiCanvas();
+
+        function fireConfetti() {
+            resizeConfettiCanvas();
+            const cols = ['#10b981', '#6366f1', '#f59e0b', '#ec4899', '#06b6d4'];
+            for (let i = 0; i < 85; i++) {
+                particles.push({
+                    x: window.innerWidth / 2 + (Math.random() - 0.5) * 160,
+                    y: window.innerHeight * 0.45,
+                    vx: (Math.random() - 0.5) * 15,
+                    vy: -Math.random() * 14 - 4,
+                    s: Math.random() * 8 + 5,
+                    c: cols[Math.floor(Math.random() * cols.length)],
+                    r: Math.random() * 360,
+                    vr: (Math.random() - 0.5) * 12
+                });
+            }
+            if (!animId) loopConfetti();
+        }
+
+        function loopConfetti() {
+            confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            particles.forEach(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += 0.36;
+                p.r += p.vr;
+                confettiCtx.save();
+                confettiCtx.translate(p.x, p.y);
+                confettiCtx.rotate((p.r * Math.PI) / 180);
+                confettiCtx.fillStyle = p.c;
+                confettiCtx.fillRect(-p.s / 2, -p.s / 2, p.s, p.s * 0.65);
+                confettiCtx.restore();
+            });
+            particles = particles.filter(p => p.y < confettiCanvas.height + 30);
+            if (particles.length > 0) {
+                animId = requestAnimationFrame(loopConfetti);
+            } else {
+                animId = null;
+            }
+        }
+
+        function notifyToast(msg) {
+            const box = document.getElementById('toast-container');
+            const el = document.createElement('div');
+            el.className = 'px-4 py-2.5 rounded-2xl bg-slate-900/95 text-white border border-indigo-500/50 shadow-2xl text-xs sm:text-sm font-black flex items-center gap-2 transition-all duration-300';
+            el.innerHTML = `<span>${msg}</span>`;
+            box.appendChild(el);
+            setTimeout(() => {
+                el.style.opacity = '0';
+                setTimeout(() => el.remove(), 300);
+            }, 3200);
+        }
+
+        /********************************************************************
+         * 5. NAVIGATION, VICTIM NAME & 1-TAP WHATSAPP / LOCK MODE
+         ********************************************************************/
+        function switchMainSection(sec) {
+            appState.section = sec;
+            sfxPop();
+
+            const playSec = document.getElementById('section-play');
+            const liveSec = document.getElementById('section-live');
+            const btnPlay = document.getElementById('nav-btn-play');
+            const btnLive = document.getElementById('nav-btn-live');
+
+            if (sec === 'play') {
+                playSec.classList.remove('hidden');
+                liveSec.classList.add('hidden');
+                btnPlay.className = 'px-3 py-1.5 rounded-xl text-xs font-black transition flex items-center gap-1.5 bg-indigo-600 text-white shadow';
+                btnLive.className = 'px-3 py-1.5 rounded-xl text-xs font-black transition flex items-center gap-1.5 text-slate-400 hover:text-white';
+            } else {
+                playSec.classList.add('hidden');
+                liveSec.classList.remove('hidden');
+                btnLive.className = 'px-3 py-1.5 rounded-xl text-xs font-black transition flex items-center gap-1.5 bg-rose-600 text-white shadow';
+                btnPlay.className = 'px-3 py-1.5 rounded-xl text-xs font-black transition flex items-center gap-1.5 text-slate-400 hover:text-white';
+                renderLiveWall();
+                renderLivePolls();
+            }
+        }
+
+        function selectPrankGame(gNum) {
+            appState.game = gNum;
+            sfxPop();
+
+            [1, 2, 3, 4, 5].forEach(n => {
+                const card = document.getElementById(`game-card-${n}`);
+                const stage = document.getElementById(`game-stage-${n}`);
+                if (!card || !stage) return;
+                if (n === gNum) {
+                    card.className = (n === 5 ? 'col-span-2 sm:col-span-1 ' : '') + 'p-2.5 rounded-2xl border-2 border-indigo-400 bg-indigo-600/25 text-right transition flex flex-col justify-between gap-1 shadow-lg shadow-indigo-500/15 scale-[1.02]';
+                    stage.classList.remove('hidden');
+                } else {
+                    card.className = (n === 5 ? 'col-span-2 sm:col-span-1 ' : '') + 'p-2.5 rounded-2xl border-2 border-slate-800 bg-slate-950/80 hover:bg-slate-800/70 text-right transition flex flex-col justify-between gap-1 opacity-80 hover:opacity-100';
+                    stage.classList.add('hidden');
+                }
+            });
+
+            if (gNum === 1) resetGame1();
+            if (gNum === 2) resetGame2();
+            if (gNum === 3) drawWheelCanvas();
+            if (gNum === 4) resetGame4();
+            if (gNum === 5) resetGame5();
+            syncVictimNamesInUI();
+        }
+
+        function updateVictimName(val) {
+            appState.victimName = val.trim() || 'عشيري فـ 2bac_2';
+            document.getElementById('victim-name-input').value = val;
+            syncVictimNamesInUI();
+        }
+
+        function syncVictimNamesInUI() {
+            document.getElementById('g1-display-name').textContent = appState.victimName;
+            document.getElementById('g1-display-question').textContent = appState.questionText;
+            document.getElementById('g2-subject-label').textContent = `${appState.examSubject} (2bac_2)`;
+            document.getElementById('g2-caught-name').textContent = appState.victimName;
+            document.getElementById('g2-caught-sub').textContent = appState.examSubject;
+            document.getElementById('g3-wheel-name').textContent = appState.victimName;
+            document.getElementById('g4-scan-name').textContent = appState.victimName;
+            const g5Name = document.getElementById('g5-student-name');
+            if (g5Name) g5Name.textContent = appState.victimName;
+            const g5TableName = document.getElementById('g5-table-name');
+            if (g5TableName) g5TableName.textContent = appState.victimName;
+            const studentBarName = document.getElementById('student-bar-name');
+            if (studentBarName) studentBarName.textContent = appState.victimName;
+        }
+
+        function activateStealthTrapMode(silent = false) {
+            appState.isLocked = true;
+            switchMainSection('play');
+            document.getElementById('easy-setup-panel').classList.add('hidden');
+            document.getElementById('g1-question-picker').classList.add('hidden');
+            document.getElementById(' stealth-footer-hint')?.classList.add('opacity-15');
+            const hint = document.getElementById('stealth-footer-hint');
+            if (hint) hint.classList.add('opacity-0', 'pointer-events-none');
+
+            // Move student switcher above the active game stage so locked classmates can explore all 5 traps
+            const switcher = document.getElementById('student-mode-switcher');
+            if (switcher) {
+                switcher.classList.remove('hidden');
+                const parentPlay = document.getElementById('section-play');
+                if (parentPlay && switcher.parentElement !== parentPlay) {
+                    parentPlay.insertBefore(switcher, parentPlay.firstChild);
+                }
+            }
+
+            if (!silent) {
+                sfxPop();
+                notifyToast('🔒 الشاشة مقفولة دابا! عطي التيليفون أولا البيسي لصاحبك (ورك 3 المرات على 2BAC_2 الفوق باش تفتحها)');
+            }
+        }
+
+        function unlockStealthTrapMode() {
+            appState.isLocked = false;
+            document.getElementById('group-entry-gate').classList.add('hidden');
+            document.getElementById('easy-setup-panel').classList.remove('hidden');
+            document.getElementById('g1-question-picker').classList.remove('hidden');
+            document.getElementById('main-nav-pills').classList.remove('hidden');
+            const hint = document.getElementById('stealth-footer-hint');
+            if (hint) hint.classList.remove('opacity-0', 'pointer-events-none');
+            const switcher = document.getElementById('student-mode-switcher');
+            if (switcher) switcher.classList.add('hidden');
+            sfxPop();
+            notifyToast('🔓 رجعتي للوحة التحكم ديال المقالب (وضع الأدمن)!');
+        }
+
+        /********************************************************************
+         * CLASS GROUP PORTAL MODE & 1-CLICK LOCKED HTML EXPORTER
+         ********************************************************************/
+        function openGroupGuideModal() {
+            sfxPop();
+            setGroupBaitTemplate(0);
+            document.getElementById('group-guide-modal').classList.remove('hidden');
+        }
+
+        function closeGroupGuideModal() {
+            document.getElementById('group-guide-modal').classList.add('hidden');
+        }
+
+        function setGroupBaitTemplate(idx) {
+            sfxPop();
+            [0, 1, 2].forEach(i => {
+                const btn = document.getElementById(`bait-tpl-${i}`);
+                if (!btn) return;
+                if (i === idx) {
+                    btn.className = 'p-2 rounded-xl border border-emerald-500 bg-emerald-500/15 text-emerald-300 font-black text-xs text-right';
+                } else {
+                    btn.className = 'p-2 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 font-bold text-xs text-right';
+                }
+            });
+            const area = document.getElementById('group-bait-textarea');
+            if (area) area.value = GROUP_BAIT_TEMPLATES[idx] || GROUP_BAIT_TEMPLATES[0];
+        }
+
+        function copyGroupBaitMessage(openWa = false) {
+            sfxPop();
+            const area = document.getElementById('group-bait-textarea');
+            const text = area ? area.value : GROUP_BAIT_TEMPLATES[0];
+            const temp = document.createElement('textarea');
+            temp.value = text;
+            document.body.appendChild(temp);
+            temp.select();
+            try { document.execCommand('copy'); } catch (e) {}
+            document.body.removeChild(temp);
+
+            if (openWa) {
+                notifyToast('📲 تم نسخ الميساج! جاري فتح واتساب باش تلوحو فـ كروب 2bac_2...');
+                window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+            } else {
+                notifyToast('✅ تم نسخ ميساج الكروب! دابا لصقو فـ كروب الواتساب ديال 2bac_2');
+            }
+        }
+
+        function activateClassGroupPortalMode() {
+            activateStealthTrapMode(true);
+            selectGateStartGame(appState.game || 5);
+            document.getElementById('group-entry-gate').classList.remove('hidden');
+            setTimeout(() => {
+                const inp = document.getElementById('gate-student-name-input');
+                if (inp) inp.focus();
+            }, 150);
+        }
+
+        function selectGateStartGame(gNum) {
+            appState.gateSelectedGame = gNum;
+            sfxPop();
+            [1, 2, 3, 5].forEach(n => {
+                const btn = document.getElementById(`gate-opt-${n}`);
+                if (!btn) return;
+                if (n === gNum) {
+                    btn.className = 'p-2.5 rounded-xl border-2 border-emerald-400 bg-emerald-500/20 text-white font-black text-xs flex items-center gap-2 transition scale-[1.02]';
+                } else {
+                    btn.className = 'p-2.5 rounded-xl border-2 border-slate-800 bg-slate-950 text-slate-300 font-bold text-xs flex items-center gap-2 transition opacity-80';
+                }
+            });
+        }
+
+        function enterAsClassmateFromGate() {
+            const inp = document.getElementById('gate-student-name-input');
+            const enteredName = (inp && inp.value.trim()) ? inp.value.trim() : 'تلميذ من 2bac_2 😎';
+            sfxWin();
+            updateVictimName(enteredName);
+            document.getElementById('group-entry-gate').classList.add('hidden');
+            selectPrankGame(appState.gateSelectedGame || 5);
+
+            // Log to Live Wall that this classmate just entered the portal!
+            publishEventToLiveWall({
+                victimName: enteredName,
+                badge: '🚪 دخل لبوابة 2bac_2',
+                text: `دخل دابا لبوابة قسم 2bac_2 باش يقلب على النقط المسربة والفرض المحروس! 👀🔥`
+            });
+        }
+
+        function downloadLockedGroupIndexHtml() {
+            sfxPop();
+            // Clone current DOM cleanly and bake FORCE_GROUP_LOCK = true so when hosted on Tiiny.host / Netlify Drop it opens locked!
+            let rawHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            rawHtml = rawHtml.replace('const FORCE_GROUP_LOCK = false;', 'const FORCE_GROUP_LOCK = true;');
+            rawHtml = rawHtml.replace(/const DEFAULT_GROUP_START_GAME = \d+;/, `const DEFAULT_GROUP_START_GAME = ${appState.game || 5};`);
+
+            const blob = new Blob([rawHtml], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'index.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            notifyToast('📦 تم تحميل ملف index.html المقفول واجد لكروب القسم!');
+        }
+
+        function handleSecretLogoTap() {
+            appState.logoTaps++;
+            clearTimeout(appState.logoTapTimer);
+            if (appState.logoTaps >= 3) {
+                appState.logoTaps = 0;
+                if (appState.isLocked) unlockStealthTrapMode();
+                else activateStealthTrapMode();
+            } else {
+                appState.logoTapTimer = setTimeout(() => { appState.logoTaps = 0; }, 850);
+            }
+        }
+
+        /********************************************************************
+         * ANTI-404 REMOTE TRAP BROADCAST & SHARE MODAL
+         ********************************************************************/
+        function broadcastLiveTrapAndOpenModal() {
+            sfxPop();
+            const code = String(Math.floor(100 + Math.random() * 899));
+            appState.activeTrapCode = code;
+
+            const trapPayload = {
+                code: code,
+                game: appState.game,
+                victimName: appState.victimName,
+                questionText: appState.questionText,
+                examSubject: appState.examSubject,
+                timestamp: Date.now()
+            };
+
+            appState.trapsByCode[code] = trapPayload;
+
+            if (typeof window.cloudSaveTrapByCode === 'function') {
+                window.cloudSaveTrapByCode(code, trapPayload);
+            }
+
+            document.getElementById('modal-victim-name').textContent = appState.victimName;
+            document.getElementById('modal-trap-code').textContent = `#${code}`;
+            document.getElementById('share-modal').classList.remove('hidden');
+            notifyToast(`📡 تم تفعيل الفخ أونلاين بالكود #${code}!`);
+        }
+
+        function closeShareModal() {
+            document.getElementById('share-modal').classList.add('hidden');
+        }
+
+        function loadTrapByCode() {
+            const inp = document.getElementById('quick-code-input');
+            const raw = (inp.value || '').replace(/[^0-9]/g, '').trim();
+            if (!raw) {
+                notifyToast('🔑 دخل كود الفخ بعدا (مثلاً: 202)');
+                return;
+            }
+            sfxPop();
+            const applyPayload = (data) => {
+                if (!data) {
+                    notifyToast('❌ هاد الكود ما كاينش أ عشيري، تأكد من الرقم!');
+                    return;
+                }
+                inp.value = '';
+                updateVictimName(data.victimName || 'عشيري فـ 2bac_2');
+                if (data.questionText) appState.questionText = data.questionText;
+                if (data.examSubject) appState.examSubject = data.examSubject;
+                selectPrankGame(Number(data.game) || 1);
+                activateStealthTrapMode(true);
+                notifyToast(`🎯 دخلتي لتحدي ${appState.victimName} فـ 2bac_2!`);
+            };
+
+            if (appState.trapsByCode[raw]) {
+                applyPayload(appState.trapsByCode[raw]);
+            } else if (typeof window.cloudFetchTrapByCode === 'function') {
+                window.cloudFetchTrapByCode(raw, applyPayload);
+            } else {
+                applyPayload(null);
+            }
+        }
+
+        function sendWhatsAppReadyMessage() {
+            sfxPop();
+            const code = appState.activeTrapCode || '202';
+            const gameTitles = {
+                1: 'تحقيق الصراحة المباشر 🚨',
+                2: 'تسريب الفرض المحروس رقم 2 مع التصحيح 📄',
+                3: 'عجلة الحظ والأحكام ديال القسم 🎡',
+                4: 'سكانير الدماغ قبل الوطني 🧠',
+                5: 'تسريب نقط مسار وملاحظات الأساتذة 🎓'
+            };
+            const title = gameTitles[appState.game] || 'تحدي 2bac_2';
+
+            const waText = `🚨 *بوابة قسم 2bac_2 الرسمية* 🚨\nواش أ *${appState.victimName}*! طلعات سميتك فـ *${title}* ديال قسم *2bac_2* 😂🔥\n\n🔑 كود الدخول ديالك هو: *${code}*\nدخل الكود الفوق فـ البوابة وشوف شنو خرج ليك قدام الدراري!`;
+
+            const temp = document.createElement('textarea');
+            temp.value = waText;
+            document.body.appendChild(temp);
+            temp.select();
+            try { document.execCommand('copy'); } catch (e) {}
+            document.body.removeChild(temp);
+
+            notifyToast('📲 تم نسخ الميساج والكود! جاري فتح واتساب...');
+            const waLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(waText)}`;
+            window.open(waLink, '_blank', 'noopener,noreferrer');
+        }
+
+        function downloadStandaloneSiteFile() {
+            sfxPop();
+            const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `2bac_2_Prank_Studio.html`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            notifyToast('📥 تم تحميل ملف الموقع (2bac_2_Prank_Studio.html) بنجاح!');
+        }
+
+        /********************************************************************
+         * 6. GAME 1: 🏃‍♂️ سؤال الصراحة المهربان
+         ********************************************************************/
+        function renderQuestionChips() {
+            const box = document.getElementById('g1-preset-chips');
+            box.innerHTML = '';
+            QUESTIONS_2BAC2.forEach((item, idx) => {
+                const btn = document.createElement('button');
+                const active = idx === appState.qIndex;
+                btn.className = active
+                    ? 'shrink-0 text-xs font-black px-3 py-1.5 rounded-xl bg-emerald-500 text-slate-950 shadow'
+                    : 'shrink-0 text-xs font-bold px-3 py-1.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-slate-300 border border-slate-800';
+                btn.textContent = item.short;
+                btn.onclick = () => {
+                    appState.qIndex = idx;
+                    appState.questionText = item.full;
+                    document.getElementById('g1-custom-q-input').value = '';
+                    sfxPop();
+                    renderQuestionChips();
+                    syncVictimNamesInUI();
+                };
+                box.appendChild(btn);
+            });
+        }
+
+        function cycleNextQuestion() {
+            appState.qIndex = (appState.qIndex + 1) % QUESTIONS_2BAC2.length;
+            appState.questionText = QUESTIONS_2BAC2[appState.qIndex].full;
+            document.getElementById('g1-custom-q-input').value = '';
+            sfxPop();
+            renderQuestionChips();
+            syncVictimNamesInUI();
+        }
+
+        function setCustomQuestionText(val) {
+            appState.questionText = val.trim() || QUESTIONS_2BAC2[appState.qIndex].full;
+            syncVictimNamesInUI();
+        }
+
+        function dodgeRunawayNo(e) {
+            if (e) { e.preventDefault(); e.stopPropagation(); }
+            appState.dodgeCount++;
+            sfxBoing();
+
+            const arena = document.getElementById('g1-arena');
+            const noBtn = document.getElementById('runaway-no-btn');
+            const yesBtn = document.getElementById('g1-yes-btn');
+            const counter = document.getElementById('g1-dodge-counter');
+
+            counter.classList.remove('hidden');
+            counter.textContent = `هربات منك: ${appState.dodgeCount} مرات 😂`;
+
+            const taunt = RUNAWAY_TAUNTS[(appState.dodgeCount - 1) % RUNAWAY_TAUNTS.length];
+            document.getElementById('g1-no-text').textContent = taunt;
+            document.getElementById('g1-taunt-box').textContent = `🏃‍♂️ ${taunt}`;
+
+            const scale = Math.min(1.32, 1 + appState.dodgeCount * 0.05);
+            yesBtn.style.transform = `scale(${scale})`;
+
+            noBtn.style.position = 'absolute';
+            const rect = arena.getBoundingClientRect();
+            const bw = noBtn.offsetWidth || 130;
+            const bh = noBtn.offsetHeight || 42;
+            const maxX = Math.max(12, rect.width - bw - 12);
+            const maxY = Math.max(12, rect.height - bh - 12);
+
+            noBtn.style.left = `${Math.floor(8 + Math.random() * (maxX - 8))}px`;
+            noBtn.style.top = `${Math.floor(8 + Math.random() * (maxY - 8))}px`;
+        }
+
+        function triggerGame1Confession() {
+            sfxWin();
+            fireConfetti();
+
+            document.getElementById('g1-cert-time').textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            document.getElementById('g1-cert-q').textContent = `« ${appState.questionText} »`;
+            document.getElementById('g1-cert-name').textContent = `${appState.victimName} ✅`;
+            document.getElementById('g1-cert-dodges').textContent = `${appState.dodgeCount} محاولات هروب 😂`;
+
+            document.getElementById('g1-trap-card').classList.add('hidden');
+            document.getElementById('g1-result-card').classList.remove('hidden');
+
+            publishEventToLiveWall({
+                victimName: appState.victimName,
+                badge: '🏃‍♂️ اعتراف رسمي فـ 2bac_2',
+                text: `اعترف بـ «آه بصح 100%» على: "${appState.questionText}" (حاول يهرب بـ لا ${appState.dodgeCount} مرات 😂)`
+            });
+        }
+
+        function resetGame1() {
+            appState.dodgeCount = 0;
+            const noBtn = document.getElementById('runaway-no-btn');
+            const yesBtn = document.getElementById('g1-yes-btn');
+            noBtn.style.position = 'relative';
+            noBtn.style.left = 'auto';
+            noBtn.style.top = 'auto';
+            yesBtn.style.transform = 'scale(1)';
+            document.getElementById('g1-no-text').textContent = 'لا، كذوب! ❌';
+            document.getElementById('g1-dodge-counter').classList.add('hidden');
+            document.getElementById('g1-result-card').classList.add('hidden');
+            document.getElementById('g1-trap-card').classList.remove('hidden');
+        }
+
+        /********************************************************************
+         * 7. GAME 2: 📸 تسريب الفرض المحروس PDF (CAUGHT IN 4K)
+         ********************************************************************/
+        function setExamLeakSubject(sub) {
+            appState.examSubject = sub;
+            sfxPop();
+            syncVictimNamesInUI();
+        }
+
+        let examInterval = null;
+        function triggerExamDownloadTrap() {
+            sfxPop();
+            const btn = document.getElementById('g2-download-btn');
+            const box = document.getElementById('g2-progress-box');
+            const bar = document.getElementById('g2-progress-bar');
+            const pctEl = document.getElementById('g2-progress-pct');
+
+            btn.disabled = true;
+            btn.classList.add('opacity-50');
+            box.classList.remove('hidden');
+
+            let pct = 0;
+            clearInterval(examInterval);
+            examInterval = setInterval(() => {
+                pct += 4;
+                if (pct > 99) pct = 99;
+                bar.style.width = `${pct}%`;
+                pctEl.textContent = `${pct}%`;
+                if (pct % 20 === 0) sfxPop(500 + pct * 3);
+
+                if (pct >= 99) {
+                    clearInterval(examInterval);
+                    setTimeout(() => {
+                        const flash = document.getElementById('camera-flash');
+                        flash.classList.remove('flash-active');
+                        void flash.offsetWidth;
+                        flash.classList.add('flash-active');
+                        sfxAlarm();
+
+                        document.getElementById('g2-bait-card').classList.add('hidden');
+                        document.getElementById('g2-caught-card').classList.remove('hidden');
+
+                        publishEventToLiveWall({
+                            victimName: appState.victimName,
+                            badge: '📸 حصل بـ 4K فالتسريب',
+                            text: `حصل بـ 4K كيبغي يحمل تسريب "${appState.examSubject}" بلا حفاظة! 📄🚨`
+                        });
+                    }, 300);
+                }
+            }, 50);
+        }
+
+        function resetGame2() {
+            clearInterval(examInterval);
+            const btn = document.getElementById('g2-download-btn');
+            btn.disabled = false;
+            btn.classList.remove('opacity-50');
+            document.getElementById('g2-progress-box').classList.add('hidden');
+            document.getElementById('g2-progress-bar').style.width = '0%';
+            document.getElementById('g2-caught-card').classList.add('hidden');
+            document.getElementById('g2-bait-card').classList.remove('hidden');
+        }
+
+        /********************************************************************
+         * 8. GAME 3: 🎡 عجلة الحظ والفضايح ديال 2bac_2 (HTML5 CANVAS WHEEL)
+         ********************************************************************/
+        function drawWheelCanvas() {
+            const canvas = document.getElementById('wheel-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const cx = canvas.width / 2;
+            const cy = canvas.height / 2;
+            const radius = cx - 6;
+            const sliceAngle = (2 * Math.PI) / WHEEL_SLICES_2BAC2.length;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            WHEEL_SLICES_2BAC2.forEach((slice, i) => {
+                const startAngle = appState.wheelAngle + i * sliceAngle;
+                const endAngle = startAngle + sliceAngle;
+
+                ctx.beginPath();
+                ctx.moveTo(cx, cy);
+                ctx.arc(cx, cy, radius, startAngle, endAngle);
+                ctx.closePath();
+                ctx.fillStyle = slice.color;
+                ctx.fill();
+                ctx.lineWidth = 2;
+                ctx.strokeStyle = '#0f172a';
+                ctx.stroke();
+
+                // Draw Slice Text
+                ctx.save();
+                ctx.translate(cx, cy);
+                ctx.rotate(startAngle + sliceAngle / 2);
+                ctx.textAlign = 'right';
+                ctx.fillStyle = '#ffffff';
+                ctx.font = '900 13px Cairo, sans-serif';
+                ctx.shadowColor = 'rgba(0,0,0,0.6)';
+                ctx.shadowBlur = 4;
+                ctx.fillText(slice.label, radius - 16, 5);
+                ctx.restore();
+            });
+        }
+
+        function spinThe2BacWheel() {
+            if (appState.isSpinning) return;
+            appState.isSpinning = true;
+            document.getElementById('g3-wheel-result-box').classList.add('hidden');
+
+            const extraSpins = 5 + Math.random() * 4;
+            const totalRotation = extraSpins * 2 * Math.PI;
+            const startAngle = appState.wheelAngle;
+            const duration = 3400;
+            const startTime = performance.now();
+            let lastTickSlice = -1;
+
+            function animateWheel(now) {
+                const elapsed = now - startTime;
+                const progress = Math.min(1, elapsed / duration);
+                // Cubic ease out
+                const eased = 1 - Math.pow(1 - progress, 3);
+                appState.wheelAngle = startAngle + totalRotation * eased;
+                drawWheelCanvas();
+
+                const sliceAngle = (2 * Math.PI) / WHEEL_SLICES_2BAC2.length;
+                const currentSlice = Math.floor((appState.wheelAngle % (2 * Math.PI)) / sliceAngle);
+                if (currentSlice !== lastTickSlice) {
+                    lastTickSlice = currentSlice;
+                    sfxPop(420 + (1 - progress) * 350);
+                }
+
+                if (progress < 1) {
+                    requestAnimationFrame(animateWheel);
+                } else {
+                    appState.isSpinning = false;
+                    // Pointer is at the top (-Math.PI / 2 or 3*Math.PI/2)
+                    const normAngle = ((3 * Math.PI / 2 - (appState.wheelAngle % (2 * Math.PI))) + 2 * Math.PI) % (2 * Math.PI);
+                    const winIdx = Math.floor(normAngle / sliceAngle) % WHEEL_SLICES_2BAC2.length;
+                    const winner = WHEEL_SLICES_2BAC2[winIdx];
+
+                    sfxWin();
+                    fireConfetti();
+
+                    document.getElementById('g3-res-victim').textContent = appState.victimName;
+                    document.getElementById('g3-res-text').textContent = winner.fullVerdict;
+                    document.getElementById('g3-wheel-result-box').classList.remove('hidden');
+
+                    publishEventToLiveWall({
+                        victimName: appState.victimName,
+                        badge: '🎡 عجلة الفضايح 2bac_2',
+                        text: `حكمات عليه العجلة بـ: "${winner.fullVerdict}"`
+                    });
+                }
+            }
+            requestAnimationFrame(animateWheel);
+        }
+
+        /********************************************************************
+         * 9. GAME 4: 🧠 سكانير دماغ 2bac_2
+         ********************************************************************/
+        function startGame4BrainScan(e) {
+            if (e) e.preventDefault();
+            if (appState.isScanning) return;
+            appState.isScanning = true;
+
+            const laser = document.getElementById('g4-laser');
+            const ring = document.getElementById('g4-progress-ring');
+            const pctEl = document.getElementById('g4-scan-pct');
+            laser.classList.remove('hidden');
+
+            let pct = 0;
+            clearInterval(appState.scanTimer);
+            appState.scanTimer = setInterval(() => {
+                pct += 5;
+                if (pct > 100) pct = 100;
+                ring.style.strokeDashoffset = 326.7 - (pct / 100) * 326.7;
+                pctEl.textContent = `${pct}%`;
+                if (pct % 15 === 0) sfxPop(500 + pct * 4);
+
+                if (pct >= 100) {
+                    clearInterval(appState.scanTimer);
+                    appState.isScanning = false;
+                    showGame4BrainResult();
+                }
+            }, 65);
+        }
+
+        function showGame4BrainResult() {
+            sfxWin();
+            fireConfetti();
+
+            const profile = BRAIN_RESULTS_2BAC2[Math.floor(Math.random() * BRAIN_RESULTS_2BAC2.length)];
+            document.getElementById('g4-res-name').textContent = appState.victimName;
+            document.getElementById('g4-res-verdict').textContent = profile.verdict;
+
+            const box = document.getElementById('g4-bars-box');
+            box.innerHTML = '';
+            profile.bars.forEach(b => {
+                box.innerHTML += `
+                    <div>
+                        <div class="flex justify-between text-xs font-bold mb-1">
+                            <span class="text-slate-200">${b.name}</span>
+                            <span class="font-mono text-cyan-300">${b.pct}%</span>
+                        </div>
+                        <div class="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full ${b.col} rounded-full" style="width:${b.pct}%"></div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('g4-scan-view').classList.add('hidden');
+            document.getElementById('g4-result-view').classList.remove('hidden');
+
+            publishEventToLiveWall({
+                victimName: appState.victimName,
+                badge: '🧠 سكانير دماغ 2bac_2',
+                text: `نتيجة السكانير: ${profile.bars[0].name} (${profile.bars[0].pct}%) — ${profile.verdict}`
+            });
+        }
+
+        function resetGame4() {
+            clearInterval(appState.scanTimer);
+            appState.isScanning = false;
+            document.getElementById('g4-laser').classList.add('hidden');
+            document.getElementById('g4-progress-ring').style.strokeDashoffset = 326.7;
+            document.getElementById('g4-scan-pct').textContent = '0%';
+            document.getElementById('g4-result-view').classList.add('hidden');
+            document.getElementById('g4-scan-view').classList.remove('hidden');
+        }
+
+        /********************************************************************
+         * 9.5 GAME 5: 🎓 نقط مسار المسربة (FAKE MASSAR GRADES)
+         ********************************************************************/
+        function revealMassarGradesTrap() {
+            sfxWin();
+            fireConfetti();
+            document.getElementById('g5-table-name').textContent = appState.victimName;
+            document.getElementById('g5-lookup-view').classList.add('hidden');
+            document.getElementById('g5-grades-view').classList.remove('hidden');
+
+            publishEventToLiveWall({
+                victimName: appState.victimName,
+                badge: '🎓 نقط مسار 2bac_2 المسربة',
+                text: `تفضح بيان النقط ديالو فـ مسار: الفيزيك 02.25/20، الماط 01.50/20، والاستراحة والطاكوس 19.75/20! 🌮😂`
+            });
+        }
+
+        function resetGame5() {
+            document.getElementById('g5-grades-view').classList.add('hidden');
+            document.getElementById('g5-lookup-view').classList.remove('hidden');
+        }
+
+        /********************************************************************
+         * 10. LIVE ONLINE WALL & 1-TAP CLASS POLLS
+         ********************************************************************/
+        function escHtml(str) {
+            return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        function renderLiveWall() {
+            const listEl = document.getElementById('live-wall-list');
+            const sorted = [...appState.liveFeed].sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+
+            document.getElementById('header-live-count').textContent = sorted.length;
+            document.getElementById('live-feed-badge').textContent = `${sorted.length} فـ اللايف`;
+
+            listEl.innerHTML = '';
+            sorted.forEach(item => {
+                const r = item.reactions || { laugh: 0, fire: 0, skull: 0 };
+                const card = document.createElement('div');
+                card.className = 'p-3.5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2';
+                card.innerHTML = `
+                    <div class="flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-2">
+                            <span class="font-black text-xs sm:text-sm text-white">${escHtml(item.victimName)}</span>
+                            <span class="text-[10px] font-black px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">${escHtml(item.badge)}</span>
+                        </div>
+                        <span class="text-[10px] text-emerald-400 font-bold">مباشر 🔴</span>
+                    </div>
+                    <p class="text-xs sm:text-sm font-bold text-slate-200 leading-relaxed">${escHtml(item.text)}</p>
+                    <div class="flex items-center gap-2 pt-1">
+                        <button onclick="reactLiveItem('${item.id}', 'laugh')" class="px-2.5 py-1 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-bold flex items-center gap-1 active:scale-90 transition">
+                            <span>😂</span><span class="font-mono text-slate-300">${r.laugh || 0}</span>
+                        </button>
+                        <button onclick="reactLiveItem('${item.id}', 'fire')" class="px-2.5 py-1 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-bold flex items-center gap-1 active:scale-90 transition">
+                            <span>🔥</span><span class="font-mono text-slate-300">${r.fire || 0}</span>
+                        </button>
+                        <button onclick="reactLiveItem('${item.id}', 'skull')" class="px-2.5 py-1 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-bold flex items-center gap-1 active:scale-90 transition">
+                            <span>💀</span><span class="font-mono text-slate-300">${r.skull || 0}</span>
+                        </button>
+                    </div>
+                `;
+                listEl.appendChild(card);
+            });
+        }
+
+        function renderLivePolls() {
+            const box = document.getElementById('live-polls-list');
+            box.innerHTML = '';
+            appState.polls.forEach(poll => {
+                const total = (poll.options || []).reduce((s, o) => s + (o.votes || 0), 0) || 1;
+                let optsHtml = '';
+                (poll.options || []).forEach((o, idx) => {
+                    const pct = Math.round(((o.votes || 0) / total) * 100);
+                    optsHtml += `
+                        <button onclick="voteInPoll('${poll.id}', ${idx})" class="w-full text-right p-2 rounded-xl bg-slate-900 hover:bg-indigo-950/40 border border-slate-800 transition space-y-1">
+                            <div class="flex justify-between text-xs font-bold">
+                                <span class="text-white">${escHtml(o.name)}</span>
+                                <span class="font-mono text-amber-400">${o.votes || 0} صوت (${pct}%)</span>
+                            </div>
+                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-l from-amber-400 to-pink-500 rounded-full" style="width:${pct}%"></div>
+                            </div>
+                        </button>
+                    `;
+                });
+
+                const card = document.createElement('div');
+                card.className = 'p-3.5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2.5';
+                card.innerHTML = `
+                    <h4 class="text-xs sm:text-sm font-black text-white">${escHtml(poll.question)}</h4>
+                    <div class="space-y-1.5">${optsHtml}</div>
+                    <div class="flex gap-1.5 pt-1">
+                        <input type="text" id="poll-add-${poll.id}" placeholder="+ زيد سمية صاحبك فـ 2bac_2..." maxlength="24"
+                            class="flex-1 px-2.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-[11px] font-bold focus:outline-none">
+                        <button onclick="addFriendToPoll('${poll.id}')" class="px-3 py-1.5 rounded-xl bg-amber-500/20 text-amber-300 border border-amber-500/30 text-[11px] font-black">
+                            زيدو +
+                        </button>
+                    </div>
+                `;
+                box.appendChild(card);
+            });
+        }
+
+        function publishEventToLiveWall(item) {
+            const newDoc = {
+                id: 'local_' + Date.now(),
+                victimName: item.victimName || appState.victimName,
+                badge: item.badge || 'فخ 2bac_2',
+                text: item.text || '',
+                timestamp: Date.now(),
+                reactions: { laugh: 1, fire: 1, skull: 0 }
+            };
+            if (typeof window.cloudAddVictim === 'function') {
+                window.cloudAddVictim(newDoc);
+            } else {
+                appState.liveFeed.unshift(newDoc);
+                renderLiveWall();
+            }
+        }
+
+        function postQuickLiveRoast() {
+            const nameEl = document.getElementById('live-author-input');
+            const msgEl = document.getElementById('live-msg-input');
+            const author = nameEl.value.trim() || 'ولد 2bac_2 😎';
+            const text = msgEl.value.trim();
+            if (!text) {
+                notifyToast('✍️ كتب شي قصف أولا نكتة بعدا!');
+                return;
+            }
+            sfxPop();
+            msgEl.value = '';
+            publishEventToLiveWall({
+                victimName: author,
+                badge: '💬 قصف مباشر',
+                text: text
+            });
+            notifyToast('🔥 تنشر الميساج ديالك فـ اللايف!');
+        }
+
+        function reactLiveItem(id, key) {
+            sfxPop();
+            const found = appState.liveFeed.find(x => x.id === id);
+            if (found) {
+                if (!found.reactions) found.reactions = { laugh: 0, fire: 0, skull: 0 };
+                found.reactions[key] = (found.reactions[key] || 0) + 1;
+                renderLiveWall();
+            }
+            if (typeof window.cloudReactVictim === 'function') {
+                window.cloudReactVictim(id, key);
+            }
+        }
+
+        function voteInPoll(pollId, idx) {
+            sfxPop();
+            const p = appState.polls.find(x => x.id === pollId);
+            if (!p || !p.options[idx]) return;
+            p.options[idx].votes = (p.options[idx].votes || 0) + 1;
+            renderLivePolls();
+            if (typeof window.cloudSavePoll === 'function') window.cloudSavePoll(p);
+        }
+
+        function addFriendToPoll(pollId) {
+            const inp = document.getElementById(`poll-add-${pollId}`);
+            if (!inp || !inp.value.trim()) return;
+            const friendName = inp.value.trim();
+            inp.value = '';
+            sfxPop();
+            const p = appState.polls.find(x => x.id === pollId);
+            if (!p) return;
+            p.options.push({ name: friendName, votes: 1 });
+            renderLivePolls();
+            if (typeof window.cloudSavePoll === 'function') window.cloudSavePoll(p);
+            notifyToast(`✅ تضاف "${friendName}" للتصويت!`);
+        }
+
+        /********************************************************************
+         * 11. INITIALIZE ON PAGE LOAD & URL AUTO-TRAP DETECTION
+         ********************************************************************/
+        window.onload = function () {
+            renderQuestionChips();
+            drawWheelCanvas();
+            renderLiveWall();
+            renderLivePolls();
+            selectPrankGame(DEFAULT_GROUP_START_GAME || 1);
+
+            // Auto-open Class Group Student Portal if exported with FORCE_GROUP_LOCK = true or #group hash
+            if (FORCE_GROUP_LOCK || window.location.hash === '#group') {
+                activateClassGroupPortalMode();
+            }
+        };
+    </script>
+
+    <!-- ================================================================= -->
+    <!-- 12. FIREBASE REAL-TIME SYNC MODULE (2BAC_2 LIVE ONLINE)           -->
+    <!-- ================================================================= -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc, setDoc, addDoc, updateDoc, onSnapshot, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-2bac2-app';
+        let db = null;
+        let auth = null;
+        let currentUser = null;
+        let seeded = false;
+
+        async function startCloudSync() {
+            try {
+                if (typeof __firebase_config === 'undefined' || !__firebase_config) return;
+                const app = initializeApp(JSON.parse(__firebase_config));
+                db = getFirestore(app);
+                auth = getAuth(app);
+
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+
+                onAuthStateChanged(auth, (user) => {
+                    currentUser = user;
+                    if (!currentUser) return;
+
+                    // Live Feed Listener
+                    const feedCol = collection(db, 'artifacts', appId, 'public', 'data', 'live_wall_2bac2');
+                    onSnapshot(feedCol, (snap) => {
+                        if (!currentUser) return;
+                        if (snap.empty && !seeded) {
+                            seeded = true;
+                            SEED_LIVE_FEED.forEach(s => {
+                                setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'live_wall_2bac2', s.id), s).catch(() => {});
+                            });
+                            return;
+                        }
+                        const items = [];
+                        snap.forEach(d => items.push({ id: d.id, ...d.data() }));
+                        if (items.length > 0) {
+                            appState.liveFeed = items;
+                            renderLiveWall();
+                        }
+                    }, () => {});
+
+                    // Live Polls Listener
+                    const pollsCol = collection(db, 'artifacts', appId, 'public', 'data', 'polls_2bac2');
+                    onSnapshot(pollsCol, (snap) => {
+                        if (!currentUser) return;
+                        if (snap.empty) {
+                            SEED_POLLS.forEach(p => {
+                                setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'polls_2bac2', p.id), p).catch(() => {});
+                            });
+                            return;
+                        }
+                        const pList = [];
+                        snap.forEach(d => pList.push({ id: d.id, ...d.data() }));
+                        if (pList.length > 0) {
+                            appState.polls = pList;
+                            renderLivePolls();
+                        }
+                    }, () => {});
+                });
+            } catch (e) {}
+        }
+
+        window.cloudAddVictim = async function (record) {
+            if (!currentUser || !db) {
+                appState.liveFeed.unshift(record);
+                renderLiveWall();
+                return;
+            }
+            try {
+                await addDoc(collection(db, 'artifacts', appId, 'public', 'data', 'live_wall_2bac2'), {
+                    victimName: record.victimName,
+                    badge: record.badge,
+                    text: record.text,
+                    timestamp: Date.now(),
+                    reactions: record.reactions || { laugh: 1, fire: 1, skull: 0 }
+                });
+            } catch (e) {
+                appState.liveFeed.unshift(record);
+                renderLiveWall();
+            }
+        };
+
+        window.cloudReactVictim = async function (docId, key) {
+            if (!currentUser || !db || !docId || docId.startsWith('local_')) return;
+            try {
+                const ref = doc(db, 'artifacts', appId, 'public', 'data', 'live_wall_2bac2', docId);
+                const snap = await getDoc(ref);
+                if (snap.exists()) {
+                    const reactions = snap.data().reactions || { laugh: 0, fire: 0, skull: 0 };
+                    reactions[key] = (reactions[key] || 0) + 1;
+                    await updateDoc(ref, { reactions });
+                }
+            } catch (e) {}
+        };
+
+        window.cloudSavePoll = async function (pollObj) {
+            if (!currentUser || !db || !pollObj || !pollObj.id) return;
+            try {
+                await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'polls_2bac2', pollObj.id), pollObj);
+            } catch (e) {}
+        };
+
+        window.cloudSaveTrapByCode = async function (code, payload) {
+            if (!currentUser || !db || !code) return;
+            try {
+                await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'traps_2bac2', String(code)), payload);
+            } catch (e) {}
+        };
+
+        window.cloudFetchTrapByCode = async function (code, callback) {
+            if (!currentUser || !db || !code) {
+                if (callback) callback(null);
+                return;
+            }
+            try {
+                const snap = await getDoc(doc(db, 'artifacts', appId, 'public', 'data', 'traps_2bac2', String(code)));
+                if (snap.exists()) {
+                    const data = snap.data();
+                    appState.trapsByCode[String(code)] = data;
+                    if (callback) callback(data);
+                } else {
+                    if (callback) callback(null);
+                }
+            } catch (e) {
+                if (callback) callback(null);
+            }
+        };
+
+        startCloudSync();
+    </script>
+</body>
+</html>
